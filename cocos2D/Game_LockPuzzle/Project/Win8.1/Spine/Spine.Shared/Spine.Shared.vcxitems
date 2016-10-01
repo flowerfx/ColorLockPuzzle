@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{729bc76f-b4c8-4c40-a9ce-f77bd23cae96}</ItemsProjectGuid>
+    <ItemsRootNamespace>Spine</ItemsRootNamespace>
+    <ItemsProjectName>Spine.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Animation.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AnimationState.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AnimationStateData.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Atlas.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AtlasAttachmentLoader.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Attachment.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AttachmentLoader.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Bone.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\BoneData.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\BoundingBoxAttachment.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Event.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\EventData.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\extension.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\IkConstraint.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\IkConstraintData.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Json.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\MeshAttachment.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\PolygonBatch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\RegionAttachment.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Skeleton.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonAnimation.cpp">
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonBounds.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonData.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonJson.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonRenderer.cpp">
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Skin.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkinnedMeshAttachment.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Slot.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SlotData.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\spine-cocos2dx.cpp">
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Animation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AnimationState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AnimationStateData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Atlas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AtlasAttachmentLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Attachment.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AttachmentLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Bone.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\BoneData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\BoundingBoxAttachment.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Event.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\EventData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\extension.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\IkConstraint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\IkConstraintData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Json.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\MeshAttachment.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\PolygonBatch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\RegionAttachment.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Skeleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonAnimation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonBounds.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonJson.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Skin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkinnedMeshAttachment.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Slot.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SlotData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\spine-cocos2dx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\spine.h" />
+  </ItemGroup>
+</Project>

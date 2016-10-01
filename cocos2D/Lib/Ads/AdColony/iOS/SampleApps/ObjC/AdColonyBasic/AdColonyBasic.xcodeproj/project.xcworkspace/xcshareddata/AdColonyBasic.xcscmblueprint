@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "78EFEB2F3C12FF38F83D106B99C306C91EF9CBC2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "78EFEB2F3C12FF38F83D106B99C306C91EF9CBC2" : 0,
+    "5360545CAEB1B944C311AFE7753ECF3D6092C618" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F3565B37-708A-45D2-87F1-F255C3EB7878",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "78EFEB2F3C12FF38F83D106B99C306C91EF9CBC2" : "AdColony-iOS-SDK\/",
+    "5360545CAEB1B944C311AFE7753ECF3D6092C618" : "adcolony-ios-2"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AdColonyBasic",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SampleApps\/ObjC\/AdColonyBasic\/AdColonyBasic.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "jirbo.git.beanstalkapp.com:\/jirbo\/adcolony-ios-2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5360545CAEB1B944C311AFE7753ECF3D6092C618"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AdColony\/AdColony-iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78EFEB2F3C12FF38F83D106B99C306C91EF9CBC2"
+    }
+  ]
+}

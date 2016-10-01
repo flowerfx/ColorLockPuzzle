@@ -1,0 +1,16 @@
+<GAME>
+	<Effect>
+		<eff id="0" name="add_score">
+			<source_plist value="xml/add_time_effect.plist"/>
+			<source_texture value="effect_glow_star"/>
+		</eff>
+		<eff id="1" name="receive_score">
+			<source_plist value="xml/receive_time_effect.plist"/>
+			<source_texture value="effect_glow_star"/>
+		</eff>
+		<eff id="2" name="end_game">
+			<source_plist value="xml/end_game_effect.plist"/>
+			<source_texture value="effect_glow_star"/>
+		</eff>
+	</Effect>
+</GAME>

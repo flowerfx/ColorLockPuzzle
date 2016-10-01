@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RK.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKAssert.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKFile.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKHashTable.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKHeap.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKList.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKLog.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKLogLocalDefines.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKMacros.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKStdSAFE.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKString.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKStringFunctions.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKStringUTF.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKThread.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKTypes.h" />
+    <ClInclude Include="..\..\..\CasualCore\RKEngine\Public\Include\RKUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKAssert.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKCore.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKHeap.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKLog.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKStdSAFE.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKString.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKStringFunctions.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKStringUTF.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKTypes.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\RKUtil.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\Win32\RKAssert_WIN32.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\Win32\RKFile.cpp" />
+    <ClCompile Include="..\..\..\CasualCore\RKEngine\Private\Source\Win32\RKThread.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{571151B5-416C-4FEB-AE4F-D5622E20D5F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RKEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GAME_WIN32;_CC_CFG_TOOLS1;RKDEVICE_GLES;WIN32;NOMINMAX;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../CasualCore/RKEngine/Public/Include;../../../CasualCore/RKEngine/Private/Include;../../../CasualCore;../ArkWriter;../../../lib/PVRVFrame/include;../../../lib/zlib/include;../../../lib/Elephant/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

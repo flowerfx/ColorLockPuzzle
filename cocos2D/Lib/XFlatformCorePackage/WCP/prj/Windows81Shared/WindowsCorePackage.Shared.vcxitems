@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{FFEF78A4-EC00-4FBC-8FA5-C49D459EEDBE}</ItemsProjectGuid>
+    <ItemsRootNamespace>WindowsCorePackage</ItemsRootNamespace>
+    <ItemsProjectName>WindowsCorePackage.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\PlatformBaseInterface\PlatformBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Platform\DeviceInfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Platform\FileSystem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Platform\GeoLocator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Platform\Platform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Windows_lib_version.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\WinShared.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\WinSharedManaged.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\common\InitStructure.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\win8.1\InGameBrowser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationImplementation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\FileStorage.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\ISingleton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultEntry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManagerConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\SecureStorageWrapper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Utils\Encryptor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Utils\ZOrdering.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\WinSharedCX.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\Include\AntiHack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\Include\FileAgents.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\WinCryptography.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\common\InitStructure.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\win8.1\InGameBrowser.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Platform\DeviceInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Platform\FileSystem.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Platform\GeoLocator.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationImplementation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\FileStorage.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultEntry.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\SecureStorageWrapper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedConnectivity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedControllers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedHacking.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedIdentifiers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedLiveTiles.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedLocalToastNotifications.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedPushNotifications.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedScreenUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedSensors.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedStorage.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedSystemInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedWeb.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Utils\Encryptor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Utils\ZOrdering.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\Sources\AntiHack.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\WinCryptography.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_back.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_background.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_cancel.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_forward.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_refresh.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+</Project>

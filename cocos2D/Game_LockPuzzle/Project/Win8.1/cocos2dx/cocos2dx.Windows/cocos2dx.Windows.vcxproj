@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Lib\RKUtils\Proj\Win8.1\RKUtils.Windows\RKUtils.Windows.vcxproj">
+      <Project>{39a31769-cfe7-4459-b5d1-c388f53911a7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Lib\WinRTAPIsEmul\WinRTAPIsEmul\WinRTAPIsEmul.Windows\WinRTAPIsEmul.Windows.vcxproj">
+      <Project>{9ecdbfa6-3ce5-4176-aa2f-b906fd081d94}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Box2D\Box2D.Windows\Box2D.Windows.vcxproj">
+      <Project>{1a7f3ee1-65a3-4a44-af08-f20dc72e122a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Bullet\Bullet.Windows\Bullet.Windows.vcxproj">
+      <Project>{58f192b1-fad6-4a71-a6fd-d6809916f7db}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Recast\Recast.Windows\Recast.Windows.vcxproj">
+      <Project>{9e478072-7374-4b5d-9cf6-3f2d7ac1d449}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Spine\Spine.Windows\Spine.Windows.vcxproj">
+      <Project>{e5be2bd0-6d01-459a-91e5-40b13925400b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99adb70d-8776-46e9-8ee5-358e603b7b59}</ProjectGuid>
+    <RootNamespace>cocos2dx</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+    <ConvergedProjectType>CodeSharingDll</ConvergedProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="..\cocos2dx.Shared\cocos2dx.Shared.vcxitems" Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1_platform.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1_platform.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1_platform.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1_platform.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1_platform.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1_platform.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\winrt_8.1-specific\OggDecoder\include;$(EngineRoot)external\winrt_8.1-specific\zlib\include;$(EngineRoot)external\freetype2\include\winrt_8.1\freetype2;$(EngineRoot)external\websockets\include\winrt_8.1;$(EngineRoot)external\curl\include\winrt_8.1;$(EngineRoot)external\tiff\include\winrt_8.1;$(EngineRoot)external\jpeg\include\winrt_8.1;$(EngineRoot)external\png\include\winrt_8.1;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\include;$(EngineRoot)external\freetype2\include\$(COCOS2D_PLATFORM)\freetype2;$(EngineRoot)external\curl\include\$(COCOS2D_PLATFORM);$(EngineRoot)external\websockets\include\$(COCOS2D_PLATFORM);$(EngineRoot)cocos\platform\winrt;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\editor-support;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)extensions;$(EngineRoot)external;$(EngineRoot)external\edtaa3func;$(EngineRoot)external\unzip;$(EngineRoot)external\tinyxml2;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(EngineRoot)external\xxhash;$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>OS_W8;_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>..\..\..\..\..\cocos2d-x-lib\cocos\2d\cocos2d.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\winrt_8.1-specific\OggDecoder\include;$(EngineRoot)external\winrt_8.1-specific\zlib\include;$(EngineRoot)external\freetype2\include\winrt_8.1\freetype2;$(EngineRoot)external\websockets\include\winrt_8.1;$(EngineRoot)external\curl\include\winrt_8.1;$(EngineRoot)external\tiff\include\winrt_8.1;$(EngineRoot)external\jpeg\include\winrt_8.1;$(EngineRoot)external\png\include\winrt_8.1;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\include;$(EngineRoot)external\freetype2\include\$(COCOS2D_PLATFORM)\freetype2;$(EngineRoot)external\curl\include\$(COCOS2D_PLATFORM);$(EngineRoot)external\websockets\include\$(COCOS2D_PLATFORM);$(EngineRoot)cocos\platform\winrt;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\editor-support;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)extensions;$(EngineRoot)external;$(EngineRoot)external\edtaa3func;$(EngineRoot)external\unzip;$(EngineRoot)external\tinyxml2;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(EngineRoot)external\xxhash;$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>OS_W8;_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>..\..\..\..\..\cocos2d-x-lib\cocos\2d\cocos2d.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\winrt_8.1-specific\OggDecoder\include;$(EngineRoot)external\winrt_8.1-specific\zlib\include;$(EngineRoot)external\freetype2\include\winrt_8.1\freetype2;$(EngineRoot)external\websockets\include\winrt_8.1;$(EngineRoot)external\curl\include\winrt_8.1;$(EngineRoot)external\tiff\include\winrt_8.1;$(EngineRoot)external\jpeg\include\winrt_8.1;$(EngineRoot)external\png\include\winrt_8.1;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\include;$(EngineRoot)external\freetype2\include\$(COCOS2D_PLATFORM)\freetype2;$(EngineRoot)external\curl\include\$(COCOS2D_PLATFORM);$(EngineRoot)external\websockets\include\$(COCOS2D_PLATFORM);$(EngineRoot)cocos\platform\winrt;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\editor-support;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)extensions;$(EngineRoot)external;$(EngineRoot)external\edtaa3func;$(EngineRoot)external\unzip;$(EngineRoot)external\tinyxml2;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(EngineRoot)external\xxhash;$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>OS_W8;_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>..\..\..\..\..\cocos2d-x-lib\cocos\2d\cocos2d.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\winrt_8.1-specific\OggDecoder\include;$(EngineRoot)external\winrt_8.1-specific\zlib\include;$(EngineRoot)external\freetype2\include\winrt_8.1\freetype2;$(EngineRoot)external\websockets\include\winrt_8.1;$(EngineRoot)external\curl\include\winrt_8.1;$(EngineRoot)external\tiff\include\winrt_8.1;$(EngineRoot)external\jpeg\include\winrt_8.1;$(EngineRoot)external\png\include\winrt_8.1;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\include;$(EngineRoot)external\freetype2\include\$(COCOS2D_PLATFORM)\freetype2;$(EngineRoot)external\curl\include\$(COCOS2D_PLATFORM);$(EngineRoot)external\websockets\include\$(COCOS2D_PLATFORM);$(EngineRoot)cocos\platform\winrt;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\editor-support;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)extensions;$(EngineRoot)external;$(EngineRoot)external\edtaa3func;$(EngineRoot)external\unzip;$(EngineRoot)external\tinyxml2;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(EngineRoot)external\xxhash;$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>OS_W8;_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>..\..\..\..\..\cocos2d-x-lib\cocos\2d\cocos2d.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

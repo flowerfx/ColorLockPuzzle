@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{8eb6af38-329e-453b-852a-fa8e0aa10158}</ItemsProjectGuid>
+    <ItemsRootNamespace>Utility_Win8_1</ItemsRootNamespace>
+    <ItemsProjectName>Utility.Win8.1.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Background\BGObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Background\ObjectBGEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\BasicObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\BoostMgr\BoostManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\DisplayView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Effect.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Factory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\FileManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\FXFlatform\XFlatform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\IAP\IAPManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\IAP\Win8.1\WinRT_IAP.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\InputManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\LoadDataXML.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\ObjectTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\ParicleManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Social\Downloader\DownloadHandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Social\SocialManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\SoundManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\ButtonEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\MenuEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\MenuResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\PanelEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\TextEntity.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Background\BGObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Background\ObjectBGEntity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\BasicObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\BoostMgr\BoostManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\DisplayView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Effect.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\FileManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\FXFlatform\XFlatform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\IAP\IAPManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\IAP\Win8.1\WinRT_IAP.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\InputManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\LoadDataXML.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\ObjectTexture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\ParticleManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Social\Downloader\DownloadHandler.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Social\SocialManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\SoundManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\ButtonEntity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\MenuEntity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\MenuResource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\PanelEntity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\TextEntity.cpp" />
+  </ItemGroup>
+</Project>

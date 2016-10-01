@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC28E310-25A5-4EA8-81AF-F8083BB96322}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Win8PhoneWindowsP8</RootNamespace>
+    <AssemblyName>Win8PhoneWindowsP8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;OS_WP8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;OS_WP8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;OS_WP8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;OS_WP8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\LocalToastNotifications.cs">
+      <Link>LocalToastNotifications.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\Controller.cs">
+      <Link>Utils\Controller\Controller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\Encryptor.cs">
+      <Link>Utils\Encryption\Encryptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\MD5.cs">
+      <Link>Utils\Encryption\MD5.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\ZOrdering.cs">
+      <Link>Utils\ZOrdering\ZOrdering.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\LiveTiles.cs">
+      <Link>LiveTiles.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\Win8PhoneContainerClass.cs">
+      <Link>Win8PhoneContainerClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\AntiHack.cs" />
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\InGameBrowser.cs" />
+    <Compile Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Source\Win8PhoneWindows8\InitStructure.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\PrecompiledLibs\JSON\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_back.png">
+      <Link>Resources\igb_back.png</Link>
+    </Content>
+    <Content Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_background.png">
+      <Link>Resources\igb_background.png</Link>
+    </Content>
+    <Content Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_cancel.png">
+      <Link>Resources\igb_cancel.png</Link>
+    </Content>
+    <Content Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_forward.png">
+      <Link>Resources\igb_forward.png</Link>
+    </Content>
+    <Content Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_refresh.png">
+      <Link>Resources\igb_refresh.png</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

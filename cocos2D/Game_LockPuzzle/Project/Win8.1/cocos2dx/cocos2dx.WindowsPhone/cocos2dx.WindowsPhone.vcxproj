@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Lib\RKUtils\Proj\Win8.1\RKUtils.WindowsPhone\RKUtils.WindowsPhone.vcxproj">
+      <Project>{2bf8ce98-df66-4d2b-8f81-dc689b31e5fd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Lib\WinRTAPIsEmul\WinRTAPIsEmul\WinRTAPIsEmul.WindowsPhone\WinRTAPIsEmul.WindowsPhone.vcxproj">
+      <Project>{a445be27-8f0c-4779-8772-8ab276be4b6e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Box2D\Box2D.WindowsPhone\Box2D.WindowsPhone.vcxproj">
+      <Project>{86c8e6bb-b9c8-459b-93e2-51490522d6c8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Bullet\Bullet.WindowsPhone\Bullet.WindowsPhone.vcxproj">
+      <Project>{a8ad71ef-58ea-4afb-bee4-6555c7be628f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Recast\Recast.WindowsPhone\Recast.WindowsPhone.vcxproj">
+      <Project>{ff34faca-e4c3-431f-8a41-4a14de6ac157}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Spine\Spine.WindowsPhone\Spine.WindowsPhone.vcxproj">
+      <Project>{52cb5ff1-bbf0-4ee6-a99d-2fcc44981e9a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{85f79c98-3f23-4ef5-8029-32fad782562d}</ProjectGuid>
+    <RootNamespace>cocos2dx</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Phone</ApplicationType>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+    <ConvergedProjectType>CodeSharingDll</ConvergedProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_wp81</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_wp81</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120_wp81</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120_wp81</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="..\cocos2dx.Shared\cocos2dx.Shared.vcxitems" Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\wp_8.1_props\cocos2d_wp_8.1_platform.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\wp_8.1_props\cocos2d_wp_8.1_platform.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\wp_8.1_props\cocos2d_wp_8.1_platform.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\wp_8.1_props\cocos2d_wp_8.1_platform.props" />
+    <Import Project="..\..\..\..\..\cocos2d-x-lib\cocos\2d\winrt_8.1_props\cocos2d_winrt_8.1.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\wp_8.1-specific\OggDecoder\include;$(EngineRoot)external\wp_8.1-specific\zlib\include;$(EngineRoot)external\freetype2\include\wp_8.1\freetype2;$(EngineRoot)external\websockets\include\wp_8.1;$(EngineRoot)external\curl\include\wp_8.1;$(EngineRoot)external\tiff\include\wp_8.1;$(EngineRoot)external\jpeg\include\wp_8.1;$(EngineRoot)external\png\include\wp_8.1;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\include;$(EngineRoot)external\freetype2\include\$(COCOS2D_PLATFORM)\freetype2;$(EngineRoot)external\curl\include\$(COCOS2D_PLATFORM);$(EngineRoot)external\websockets\include\$(COCOS2D_PLATFORM);$(EngineRoot)cocos\platform\winrt;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\editor-support;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)extensions;$(EngineRoot)external;$(EngineRoot)external\edtaa3func;$(EngineRoot)external\unzip;$(EngineRoot)external\tinyxml2;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(EngineRoot)external\xxhash;$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WP8;CC_WINDOWS_PHONE_8_1;_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>..\..\..\..\..\cocos2d-x-lib\cocos\2d\cocos2d.def</ModuleDefinitionFile>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\wp_8.1-specific\OggDecoder\include;$(EngineRoot)external\wp_8.1-specific\zlib\include;$(EngineRoot)external\freetype2\include\wp_8.1\freetype2;$(EngineRoot)external\websockets\include\wp_8.1;$(EngineRoot)external\curl\include\wp_8.1;$(EngineRoot)external\tiff\include\wp_8.1;$(EngineRoot)external\jpeg\include\wp_8.1;$(EngineRoot)external\png\include\wp_8.1;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\include;$(EngineRoot)external\freetype2\include\$(COCOS2D_PLATFORM)\freetype2;$(EngineRoot)external\curl\include\$(COCOS2D_PLATFORM);$(EngineRoot)external\websockets\include\$(COCOS2D_PLATFORM);$(EngineRoot)cocos\platform\winrt;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\editor-support;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)extensions;$(EngineRoot)external;$(EngineRoot)external\edtaa3func;$(EngineRoot)external\unzip;$(EngineRoot)external\tinyxml2;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(EngineRoot)external\xxhash;$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WP8;CC_WINDOWS_PHONE_8_1;_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>..\..\..\..\..\cocos2d-x-lib\cocos\2d\cocos2d.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\wp_8.1-specific\OggDecoder\include;$(EngineRoot)external\wp_8.1-specific\zlib\include;$(EngineRoot)external\freetype2\include\wp_8.1\freetype2;$(EngineRoot)external\websockets\include\wp_8.1;$(EngineRoot)external\curl\include\wp_8.1;$(EngineRoot)external\tiff\include\wp_8.1;$(EngineRoot)external\jpeg\include\wp_8.1;$(EngineRoot)external\png\include\wp_8.1;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\include;$(EngineRoot)external\freetype2\include\$(COCOS2D_PLATFORM)\freetype2;$(EngineRoot)external\curl\include\$(COCOS2D_PLATFORM);$(EngineRoot)external\websockets\include\$(COCOS2D_PLATFORM);$(EngineRoot)cocos\platform\winrt;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\editor-support;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)extensions;$(EngineRoot)external;$(EngineRoot)external\edtaa3func;$(EngineRoot)external\unzip;$(EngineRoot)external\tinyxml2;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(EngineRoot)external\xxhash;$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WP8;CC_WINDOWS_PHONE_8_1;_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>..\..\..\..\..\cocos2d-x-lib\cocos\2d\cocos2d.def</ModuleDefinitionFile>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(EngineRoot)external\wp_8.1-specific\OggDecoder\include;$(EngineRoot)external\wp_8.1-specific\zlib\include;$(EngineRoot)external\freetype2\include\wp_8.1\freetype2;$(EngineRoot)external\websockets\include\wp_8.1;$(EngineRoot)external\curl\include\wp_8.1;$(EngineRoot)external\tiff\include\wp_8.1;$(EngineRoot)external\jpeg\include\wp_8.1;$(EngineRoot)external\png\include\wp_8.1;$(EngineRoot)external\protobuf-lite\src;$(EngineRoot)external\protobuf-lite\win32;$(EngineRoot)external\$(COCOS2D_PLATFORM)-specific\angle\include;$(EngineRoot)external\freetype2\include\$(COCOS2D_PLATFORM)\freetype2;$(EngineRoot)external\curl\include\$(COCOS2D_PLATFORM);$(EngineRoot)external\websockets\include\$(COCOS2D_PLATFORM);$(EngineRoot)cocos\platform\winrt;$(EngineRoot)cocos\platform;$(EngineRoot)cocos\editor-support;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\sqlite3\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)extensions;$(EngineRoot)external;$(EngineRoot)external\edtaa3func;$(EngineRoot)external\unzip;$(EngineRoot)external\tinyxml2;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(EngineRoot)external\xxhash;$(EngineRoot)external\poly2tri;$(EngineRoot)external\poly2tri\common;$(EngineRoot)external\poly2tri\sweep;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WP8;CC_WINDOWS_PHONE_8_1;_USRDLL;_LIB;COCOS2DXWIN32_EXPORTS;_USE3DDLL;_EXPORT_DLL_;_USRSTUDIODLL;_USREXDLL;_USEGUIDLL;CC_ENABLE_CHIPMUNK_INTEGRATION=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>..\..\..\..\..\cocos2d-x-lib\cocos\2d\cocos2d.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(ProjectDir)\..\..\bin\$(PlatformTarget)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\obj\$(PlatformTarget)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
+    <TargetName>WindowsCorePackage.Windows81</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>OS_WP81;_CRT_SECURE_NO_WARNINGS;WCP_DLL;_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(Projectdir)../../src/WindowsCorePackage.Windows/include;$(Projectdir)../../src/WindowsCorePackage.Shared/PNLib/include;$(Projectdir)../../include;$(Projectdir)../../src/WindowsCorePackage.Shared;$(Projectdir)../../src/WindowsCorePackage.Windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <ImportLibrary>$(ProjectDir)\..\..\bin\$(PlatformTarget)\$(Configuration)\WindowsCorePackage.WindowsPhone.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

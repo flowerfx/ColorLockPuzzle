@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source\Game">
+      <UniqueIdentifier>{c6a30cd1-9d2c-4ad3-8143-d467d105f5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Menu">
+      <UniqueIdentifier>{77ed9707-6fbc-4077-99ef-0c0797619c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GamePlay">
+      <UniqueIdentifier>{7d0e64ac-daad-4680-939b-60af69b7a96e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\AppDelegate.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuEntityWrapper.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuMain.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuManager.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\MainGame.cpp">
+      <Filter>Source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuSetting.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\GamePlay\ActionPhaseManager.cpp">
+      <Filter>Source\Game\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\GamePlay\ControllableUnit.cpp">
+      <Filter>Source\Game\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\GamePlay\UnitManager.cpp">
+      <Filter>Source\Game\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\GamePlay\BasicUnit.cpp">
+      <Filter>Source\Game\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuIAP.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuSelectionLevel.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuHUD.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuInGame.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuPopUp.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuTutorial.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Menu\MenuEndGame.cpp">
+      <Filter>Source\Game\Menu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\AppDelegate.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\AppMacros.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuEntityWrapper.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuMain.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuManager.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\MainGame.h">
+      <Filter>Source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuSetting.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\GamePlay\ActionPhaseManager.h">
+      <Filter>Source\Game\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\GamePlay\ControllableUnit.h">
+      <Filter>Source\Game\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\GamePlay\UnitManager.h">
+      <Filter>Source\Game\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\GamePlay\BasicUnit.h">
+      <Filter>Source\Game\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuIAP.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuSelectionLevel.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuHUD.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuInGame.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuPopUp.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuTutorial.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Menu\MenuEndGame.h">
+      <Filter>Source\Game\Menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

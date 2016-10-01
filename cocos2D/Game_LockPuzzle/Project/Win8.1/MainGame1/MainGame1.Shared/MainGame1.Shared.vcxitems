@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{d91b3b53-b6eb-4aea-a6b4-9230055b6012}</ItemsProjectGuid>
+    <ItemsRootNamespace>cocos2dGame</ItemsRootNamespace>
+    <ItemsProjectName>MainGame1.Shared</ItemsProjectName>
+    <SharedGUID>123eb9f3-40c8-4330-921c-c2cd32af5951</SharedGUID>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\AppDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\AppMacros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\HelloWorldScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h">
+      <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cocos2dRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)OpenGLES.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.h">
+      <DependentUpon>$(MSBuildThisFileDirectory)OpenGLESPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\AppDelegate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\Source\HelloWorldScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp">
+      <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cocos2dRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLES.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.cpp">
+      <DependentUpon>$(MSBuildThisFileDirectory)OpenGLESPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <FileType>Document</FileType>
+    </ApplicationDefinition>
+    <Page Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml" />
+  </ItemGroup>
+</Project>

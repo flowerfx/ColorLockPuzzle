@@ -1,0 +1,61 @@
+material default
+{
+	technique blur
+	{
+		pass 0
+		{
+			shader
+			{
+				vertexShader = Material/effect_Normal.vsh
+				fragmentShader = Material/effect_Blur.fsh
+				// Uniforms
+				blurRadius = 12
+				sampleNum = 5
+				resolution = 100,100
+			}
+		}
+	}
+	technique outline
+	{
+		pass 0
+		{
+			shader
+			{
+				vertexShader = Material/effect_Normal.vsh
+				fragmentShader = Material/effect_Outline.fsh
+				u_outlineColor = 0.1, 0.2, 0.3
+				u_radius = 0.01
+				u_threshold = 1.75
+			}
+		}
+	}
+	technique bloom 
+	{
+		pass 0
+		{
+			shader
+			{
+				vertexShader = Material/effect_Normal.vsh
+				fragmentShader = Material/effect_Bloom.fsh
+				// Uniforms
+				blurRadius = 5
+				sampleNum = 3
+				resolution = 1024,1024
+				center = 512,512
+			}
+		}
+	}
+	technique edge_detect
+	{
+		pass 0
+		{
+			shader
+			{
+				defines = 
+				vertexShader = Material/effect_Normal.vsh
+				fragmentShader = Material/effect_EdgeDetection.fsh
+				resolution = 100, 100
+			}
+		}
+	}
+}

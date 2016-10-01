@@ -1,0 +1,304 @@
+<GAME>
+	<Sound>
+		<sound_play id="0" name="SFX_CLICK_BTN">
+			<path value="Sound\sfx_btn_select.wav"/>
+			<delay_first value="0"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="1" name="SFX_MENU_SHOW">
+			<path value="Sound\sfx_menu_appear.wav"/>
+			<delay_first value="0.5"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="2" name="SFX_MENU_HIDE">
+			<path value="Sound\sfx_menu_close.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="3" name="SFX_ITEM_ADD_1">
+			<path value="Sound\sfx_item_add_1.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="4" name="SFX_ITEM_ADD_2">
+			<path value="Sound\sfx_item_add_2.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="5" name="SFX_ITEM_ADD_3">
+			<path value="Sound\sfx_item_add_3.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="6" name="SFX_PLAY_GAME">
+			<path value="Sound\sfx_button_start.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="7" name="SFX_BUY_COIN">
+			<path value="Sound\sfx_buy.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="8" name="SFX_ADD">
+			<path value="Sound\sfx_hud_add.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="9" name="SFX_MENU_FADE_IN">
+			<path value="Sound\sfx_menu_slide_in.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="10" name="SFX_MENU_FADE_OUT">
+			<path value="Sound\sfx_menu_slide_out.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="11" name="SFX_SELECT_1">
+			<path value="Sound\sfx_select_1.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="12" name="SFX_SELECT_2">
+			<path value="Sound\sfx_select_2.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="13" name="SFX_SELECT_3">
+			<path value="Sound\sfx_select_3.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="14" name="SFX_POPUP_APPEAR">
+			<path value="Sound\sfx_popup_speech.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="15" name="SFX_MENU_SLIDE_1">
+			<path value="Sound\sfx_menu_slide_1.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="16" name="SFX_MENU_SLIDE_2">
+			<path value="Sound\sfx_menu_slide_2.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="17" name="SFX_MENU_SLIDE_3">
+			<path value="Sound\sfx_menu_slide_3.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="18" name="SFX_APPEAR_1">	
+			<path value="Sound\sfx_appear_1.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="19" name="SFX_BTN_SELECT">
+			<path value="Sound\sfx_button_select.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="20" name="SFX_BTN_DENY">
+			<path value="Sound\sfx_button_deny.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="21" name="SFX_CLICK_1">
+			<path value="Sound\sfx_click1.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="22" name="SFX_CLICK_2">
+			<path value="Sound\sfx_click2.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="23" name="SFX_CLICK_3">
+			<path value="Sound\sfx_click3.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="24" name="SFX_CLICK_4">
+			<path value="Sound\sfx_click4.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="25" name="SFX_ADD_1_SCORE">
+			<path value="Sound\sfx_add_1_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="26" name="SFX_ADD_2_SCORE">
+			<path value="Sound\sfx_add_2_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="27" name="SFX_ADD_3_SCORE">
+			<path value="Sound\sfx_add_3_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="28" name="SFX_ADD_4_SCORE">	
+			<path value="Sound\sfx_add_4_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="29" name="SFX_ADD_5_SCORE">
+			<path value="Sound\sfx_add_5_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="30" name="SFX_ADD_6_SCORE">
+			<path value="Sound\sfx_add_6_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="31" name="SFX_ADD_7_SCORE">
+			<path value="Sound\sfx_add_7_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="32" name="SFX_ADD_8_SCORE">
+			<path value="Sound\sfx_add_8_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="33" name="SFX_ADD_9_SCORE">
+			<path value="Sound\sfx_add_9_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="34" name="SFX_ADD_10_SCORE">
+			<path value="Sound\sfx_add_over10_score.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="35" name="SFX_HL_UNIT">
+			<path value="Sound\sfx_hl_unit.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="36" name="SFX_USE_BOOST">
+			<path value="Sound\sfx_use_boost.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="37" name="SFX_ADD_TIME">
+			<path value="Sound\sfx_add_time_unit.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="38" name="SFX_BOMB_EXPLOSIVE">
+			<path value="Sound\sfx_bomb_explode.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="39" name="SFX_BOMB_STICK_TIME">
+			<path value="Sound\sfx_bomb_timer_tick.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="40" name="SFX_TICK_TOCK_END">
+			<path value="Sound\sfx_TickTockLoop.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="41" name="SFX_RELEASE_UNIT">
+			<path value="Sound\sfx_release_Line.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="42" name="SFX_PROCESS_NEXT">
+			<path value="Sound\sfx_process_next_level.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="43" name="SFX_ENTER_AP">
+			<path value="Sound\sfx_enter_AP.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+		<sound_play id="44" name="SFX_UNIT_FADE">
+			<path value="Sound\sfx_unit_fade.wav"/>
+			<delay_first value="0.15"/>
+			<loop value="1"/>
+			<type value="sound"/>
+		</sound_play>
+        <sound_play id="45" name="MUSIC_MAIN">
+            <path value="Music\Sunshine.mp3"/>
+            <delay_first value="0.15"/>
+            <loop value="1"/>
+            <type value="music"/>
+        </sound_play>
+        <sound_play id="46" name="MUSIC_IGM">
+            <path value="Music\Harmony.mp3"/>
+            <delay_first value="0.15"/>
+            <loop value="1"/>
+            <type value="music"/>
+        </sound_play>
+        <sound_play id="47" name="MUSIC_AP_1">
+            <path value="Music\TillTheEnd.mp3"/>
+            <delay_first value="0.15"/>
+            <loop value="1"/>
+            <type value="music"/>
+        </sound_play>
+        <sound_play id="48" name="MUSIC_AP_2">
+            <path value="Music\Imagination.mp3"/>
+            <delay_first value="0.15"/>
+            <loop value="1"/>
+            <type value="music"/>
+        </sound_play>
+        <sound_play id="49" name="MUSIC_AP_3">
+            <path value="Music\TakeOff.mp3"/>
+            <delay_first value="0.15"/>
+            <loop value="1"/>
+            <type value="music"/>
+        </sound_play>
+	</Sound>
+</GAME>

@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		120AA6C41CAAB8320038B2F9 /* MenuTutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 120AA6C21CAAB8320038B2F9 /* MenuTutorial.cpp */; };
+		12133A961CB2CA0F00F48C02 /* MenuEndGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12133A941CB2CA0F00F48C02 /* MenuEndGame.cpp */; };
+		12133A9A1CB2CA6000F48C02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12133A991CB2CA6000F48C02 /* Images.xcassets */; };
+		12133AA41CB2E39D00F48C02 /* close-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 12133AA31CB2E39D00F48C02 /* close-button.png */; };
+		123E351A1CA99F6600018814 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E35191CA99F6600018814 /* CoreMedia.framework */; };
+		1267F7001CB30A1F008092F2 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1267F6FF1CB30A1F008092F2 /* AdColony.framework */; };
+		1267F7041CB30AC0008092F2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1267F7031CB30AC0008092F2 /* WebKit.framework */; };
+		1267F7061CB30B1B008092F2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1267F7051CB30B1B008092F2 /* Social.framework */; };
+		127FCB621CA83FF100C2656C /* ActionPhaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB451CA83FF100C2656C /* ActionPhaseManager.cpp */; };
+		127FCB631CA83FF100C2656C /* BasicUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB471CA83FF100C2656C /* BasicUnit.cpp */; };
+		127FCB641CA83FF100C2656C /* ControllableUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB491CA83FF100C2656C /* ControllableUnit.cpp */; };
+		127FCB651CA83FF100C2656C /* UnitManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB4B1CA83FF100C2656C /* UnitManager.cpp */; };
+		127FCB661CA83FF100C2656C /* MainGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB4D1CA83FF100C2656C /* MainGame.cpp */; };
+		127FCB671CA83FF100C2656C /* MenuEntityWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB501CA83FF100C2656C /* MenuEntityWrapper.cpp */; };
+		127FCB681CA83FF100C2656C /* MenuHUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB521CA83FF100C2656C /* MenuHUD.cpp */; };
+		127FCB691CA83FF100C2656C /* MenuIAP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB541CA83FF100C2656C /* MenuIAP.cpp */; };
+		127FCB6A1CA83FF100C2656C /* MenuInGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB561CA83FF100C2656C /* MenuInGame.cpp */; };
+		127FCB6B1CA83FF100C2656C /* MenuMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB581CA83FF100C2656C /* MenuMain.cpp */; };
+		127FCB6C1CA83FF100C2656C /* MenuManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB5A1CA83FF100C2656C /* MenuManager.cpp */; };
+		127FCB6D1CA83FF100C2656C /* MenuPopUp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB5C1CA83FF100C2656C /* MenuPopUp.cpp */; };
+		127FCB6E1CA83FF100C2656C /* MenuSelectionLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB5E1CA83FF100C2656C /* MenuSelectionLevel.cpp */; };
+		127FCB6F1CA83FF100C2656C /* MenuSetting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127FCB601CA83FF100C2656C /* MenuSetting.cpp */; };
+		127FCBF01CA8657000C2656C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCBEF1CA8657000C2656C /* Bolts.framework */; };
+		127FCBF71CA8657400C2656C /* FacebookSDKStrings.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCBF11CA8657400C2656C /* FacebookSDKStrings.bundle */; };
+		127FCBF81CA8657400C2656C /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCBF21CA8657400C2656C /* FBAudienceNetwork.framework */; };
+		127FCBF91CA8657400C2656C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCBF31CA8657400C2656C /* FBSDKCoreKit.framework */; };
+		127FCBFA1CA8657400C2656C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCBF41CA8657400C2656C /* FBSDKLoginKit.framework */; };
+		127FCBFB1CA8657400C2656C /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCBF51CA8657400C2656C /* FBSDKMessengerShareKit.framework */; };
+		127FCBFC1CA8657400C2656C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCBF61CA8657400C2656C /* FBSDKShareKit.framework */; };
+		127FCC021CA8685800C2656C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC011CA8685800C2656C /* GameKit.framework */; };
+		127FCC041CA8685F00C2656C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC031CA8685F00C2656C /* StoreKit.framework */; };
+		127FCC061CA86CF200C2656C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC051CA86CF200C2656C /* SystemConfiguration.framework */; };
+		127FCC081CA86D7B00C2656C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC071CA86D7B00C2656C /* MediaPlayer.framework */; };
+		127FCC0A1CA86DA200C2656C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC091CA86DA200C2656C /* MessageUI.framework */; };
+		127FCC0C1CA86E1400C2656C /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC0B1CA86E1400C2656C /* GoogleMobileAds.framework */; };
+		127FCC111CA86ECB00C2656C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC101CA86ECB00C2656C /* CoreTelephony.framework */; };
+		127FCC131CA86ED000C2656C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC121CA86ED000C2656C /* CoreText.framework */; };
+		127FCC151CA86EFB00C2656C /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC141CA86EFA00C2656C /* EventKitUI.framework */; };
+		127FCC171CA86F0000C2656C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC161CA86F0000C2656C /* EventKit.framework */; };
+		127FCC191CA86F2A00C2656C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FCC181CA86F2A00C2656C /* AdSupport.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		12AF66031CA94D3400D3E462 /* libcocos2dx_lib_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F573E11CA8343600C26D90 /* libcocos2dx_lib_iOS.a */; };
+		12DD2D3D1CB67FD60011E11D /* 0000_Test_custom.ark in Resources */ = {isa = PBXBuildFile; fileRef = 12DD2D3B1CB67FD60011E11D /* 0000_Test_custom.ark */; };
+		12DD2D3E1CB67FD60011E11D /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 12DD2D3C1CB67FD60011E11D /* Data */; };
+		12E326CC1C41275200DA00C0 /* libUti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E3260B1C41208E00DA00C0 /* libUti.a */; };
+		12E326CF1C41277800DA00C0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326CE1C41277800DA00C0 /* CoreMotion.framework */; };
+		12E326D11C41278500DA00C0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326D01C41278500DA00C0 /* libz.dylib */; };
+		12E326D31C41279400DA00C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326D21C41279400DA00C0 /* Foundation.framework */; };
+		12E326D51C41279C00DA00C0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326D41C41279C00DA00C0 /* AudioToolbox.framework */; };
+		12E326D71C4127A800DA00C0 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326D61C4127A800DA00C0 /* OpenAL.framework */; };
+		12E326D91C4127B600DA00C0 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326D81C4127B600DA00C0 /* libiconv.dylib */; };
+		12E326DB1C4127BF00DA00C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326DA1C4127BF00DA00C0 /* QuartzCore.framework */; };
+		12E326DD1C4127C800DA00C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326DC1C4127C800DA00C0 /* CoreGraphics.framework */; };
+		12E326DF1C4127D400DA00C0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326DE1C4127D400DA00C0 /* OpenGLES.framework */; };
+		12E326E11C4127DD00DA00C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326E01C4127DD00DA00C0 /* UIKit.framework */; };
+		12E326E31C4127E500DA00C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326E21C4127E500DA00C0 /* AVFoundation.framework */; };
+		12E326E61C41286B00DA00C0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326E51C41286B00DA00C0 /* libsqlite3.dylib */; };
+		12E326E81C41288600DA00C0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326E71C41288600DA00C0 /* Security.framework */; };
+		12E326EA1C412B6800DA00C0 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E326E91C412B6800DA00C0 /* libcurl.a */; };
+		12E327261C412D1F00DA00C0 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E327211C412D1F00DA00C0 /* AppDelegate.cpp */; };
+		12E3273E1C412DE600DA00C0 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 12E327291C412DE600DA00C0 /* AppController.mm */; };
+		12E327501C412DE600DA00C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3273B1C412DE600DA00C0 /* main.m */; };
+		12E327511C412DE600DA00C0 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 12E3273D1C412DE600DA00C0 /* RootViewController.mm */; };
+		12E327531C412F9000DA00C0 /* RKUtils_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E325771C40F83600DA00C0 /* RKUtils_iOS.a */; };
+		12F574241CA8363300C26D90 /* libjsoncpp_d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F5741F1CA8354700C26D90 /* libjsoncpp_d.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12E325761C40F83600DA00C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E325711C40F83600DA00C0 /* RKUtilsIOS_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 12E325741C40F83600DA00C0;
+			remoteInfo = RKUtilsIOS_Libs;
+		};
+		12E3260A1C41208E00DA00C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E326051C41208D00DA00C0 /* Uti.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 12E325EB1C41208C00DA00C0;
+			remoteInfo = Uti;
+		};
+		12E327561C41303F00DA00C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E325711C40F83600DA00C0 /* RKUtilsIOS_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 24ECE3BE1AEBFAC4003C338D;
+			remoteInfo = RKUtilsIOS_Libs;
+		};
+		12E327581C41304200DA00C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E326051C41208D00DA00C0 /* Uti.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 12E325EA1C41208C00DA00C0;
+			remoteInfo = Uti;
+		};
+		12F573E01CA8343600C26D90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E315911C40ECB500DA00C0 /* cocos2dx_lib_iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 12F573DB1CA8343400C26D90;
+			remoteInfo = cocos2dx_lib_iOS;
+		};
+		12F5741E1CA8354700C26D90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F574181CA8354700C26D90 /* jsoncpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C396340073A92AAD0CE3180;
+			remoteInfo = jsoncpp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		120AA6C21CAAB8320038B2F9 /* MenuTutorial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuTutorial.cpp; sourceTree = "<group>"; };
+		120AA6C31CAAB8320038B2F9 /* MenuTutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTutorial.h; sourceTree = "<group>"; };
+		12133A941CB2CA0F00F48C02 /* MenuEndGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuEndGame.cpp; sourceTree = "<group>"; };
+		12133A951CB2CA0F00F48C02 /* MenuEndGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuEndGame.h; sourceTree = "<group>"; };
+		12133A991CB2CA6000F48C02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12133AA31CB2E39D00F48C02 /* close-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-button.png"; sourceTree = "<group>"; };
+		123E35191CA99F6600018814 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1267F6FF1CB30A1F008092F2 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../Lib/Ads/AdColony/iOS/AdColony.framework; sourceTree = "<group>"; };
+		1267F7031CB30AC0008092F2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1267F7051CB30B1B008092F2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		127FCB451CA83FF100C2656C /* ActionPhaseManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ActionPhaseManager.cpp; sourceTree = "<group>"; };
+		127FCB461CA83FF100C2656C /* ActionPhaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionPhaseManager.h; sourceTree = "<group>"; };
+		127FCB471CA83FF100C2656C /* BasicUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicUnit.cpp; sourceTree = "<group>"; };
+		127FCB481CA83FF100C2656C /* BasicUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicUnit.h; sourceTree = "<group>"; };
+		127FCB491CA83FF100C2656C /* ControllableUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControllableUnit.cpp; sourceTree = "<group>"; };
+		127FCB4A1CA83FF100C2656C /* ControllableUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllableUnit.h; sourceTree = "<group>"; };
+		127FCB4B1CA83FF100C2656C /* UnitManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnitManager.cpp; sourceTree = "<group>"; };
+		127FCB4C1CA83FF100C2656C /* UnitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitManager.h; sourceTree = "<group>"; };
+		127FCB4D1CA83FF100C2656C /* MainGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainGame.cpp; sourceTree = "<group>"; };
+		127FCB4E1CA83FF100C2656C /* MainGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGame.h; sourceTree = "<group>"; };
+		127FCB501CA83FF100C2656C /* MenuEntityWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuEntityWrapper.cpp; sourceTree = "<group>"; };
+		127FCB511CA83FF100C2656C /* MenuEntityWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuEntityWrapper.h; sourceTree = "<group>"; };
+		127FCB521CA83FF100C2656C /* MenuHUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuHUD.cpp; sourceTree = "<group>"; };
+		127FCB531CA83FF100C2656C /* MenuHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHUD.h; sourceTree = "<group>"; };
+		127FCB541CA83FF100C2656C /* MenuIAP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuIAP.cpp; sourceTree = "<group>"; };
+		127FCB551CA83FF100C2656C /* MenuIAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuIAP.h; sourceTree = "<group>"; };
+		127FCB561CA83FF100C2656C /* MenuInGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuInGame.cpp; sourceTree = "<group>"; };
+		127FCB571CA83FF100C2656C /* MenuInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuInGame.h; sourceTree = "<group>"; };
+		127FCB581CA83FF100C2656C /* MenuMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuMain.cpp; sourceTree = "<group>"; };
+		127FCB591CA83FF100C2656C /* MenuMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuMain.h; sourceTree = "<group>"; };
+		127FCB5A1CA83FF100C2656C /* MenuManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuManager.cpp; sourceTree = "<group>"; };
+		127FCB5B1CA83FF100C2656C /* MenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuManager.h; sourceTree = "<group>"; };
+		127FCB5C1CA83FF100C2656C /* MenuPopUp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuPopUp.cpp; sourceTree = "<group>"; };
+		127FCB5D1CA83FF100C2656C /* MenuPopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuPopUp.h; sourceTree = "<group>"; };
+		127FCB5E1CA83FF100C2656C /* MenuSelectionLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuSelectionLevel.cpp; sourceTree = "<group>"; };
+		127FCB5F1CA83FF100C2656C /* MenuSelectionLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSelectionLevel.h; sourceTree = "<group>"; };
+		127FCB601CA83FF100C2656C /* MenuSetting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuSetting.cpp; sourceTree = "<group>"; };
+		127FCB611CA83FF100C2656C /* MenuSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSetting.h; sourceTree = "<group>"; };
+		127FCBEF1CA8657000C2656C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "/Users/qchien/Downloads/FacebookSDKs-iOS-20160316/Bolts.framework"; sourceTree = "<absolute>"; };
+		127FCBF11CA8657400C2656C /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKStrings.bundle; path = "/Users/qchien/Downloads/FacebookSDKs-iOS-20160316/FacebookSDKStrings.bundle"; sourceTree = "<absolute>"; };
+		127FCBF21CA8657400C2656C /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = "/Users/qchien/Downloads/FacebookSDKs-iOS-20160316/FBAudienceNetwork.framework"; sourceTree = "<absolute>"; };
+		127FCBF31CA8657400C2656C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "/Users/qchien/Downloads/FacebookSDKs-iOS-20160316/FBSDKCoreKit.framework"; sourceTree = "<absolute>"; };
+		127FCBF41CA8657400C2656C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "/Users/qchien/Downloads/FacebookSDKs-iOS-20160316/FBSDKLoginKit.framework"; sourceTree = "<absolute>"; };
+		127FCBF51CA8657400C2656C /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "/Users/qchien/Downloads/FacebookSDKs-iOS-20160316/FBSDKMessengerShareKit.framework"; sourceTree = "<absolute>"; };
+		127FCBF61CA8657400C2656C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "/Users/qchien/Downloads/FacebookSDKs-iOS-20160316/FBSDKShareKit.framework"; sourceTree = "<absolute>"; };
+		127FCC011CA8685800C2656C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		127FCC031CA8685F00C2656C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		127FCC051CA86CF200C2656C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		127FCC071CA86D7B00C2656C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		127FCC091CA86DA200C2656C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		127FCC0B1CA86E1400C2656C /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "/Users/qchien/Downloads/GoogleMobileAdsSdkiOS-7.7.0/GoogleMobileAds.framework"; sourceTree = "<absolute>"; };
+		127FCC101CA86ECB00C2656C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		127FCC121CA86ED000C2656C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		127FCC141CA86EFA00C2656C /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		127FCC161CA86F0000C2656C /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		127FCC181CA86F2A00C2656C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		12DD2D3B1CB67FD60011E11D /* 0000_Test_custom.ark */ = {isa = PBXFileReference; lastKnownFileType = file; name = 0000_Test_custom.ark; path = ../../../DataPacked/Data/0000_Test_custom.ark; sourceTree = "<group>"; };
+		12DD2D3C1CB67FD60011E11D /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = ../../../DataPacked/Data/Data; sourceTree = "<group>"; };
+		12E315121C40E97D00DA00C0 /* ColorLockPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorLockPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E315911C40ECB500DA00C0 /* cocos2dx_lib_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2dx_lib_iOS.xcodeproj; path = /Volumes/Project/ProjGame/Cocos2D/Game1/Project/iOS/Game1/../cocos2dx_lib_iOS/cocos2dx_lib_iOS.xcodeproj; sourceTree = "<absolute>"; };
+		12E325711C40F83600DA00C0 /* RKUtilsIOS_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RKUtilsIOS_libs.xcodeproj; path = ../../../../Lib/RKUtils/Proj/iOS/RKUtilsIOS_libs.xcodeproj; sourceTree = "<group>"; };
+		12E326051C41208D00DA00C0 /* Uti.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Uti.xcodeproj; path = ../../../../Utility/Proj/Uti/Uti.xcodeproj; sourceTree = "<group>"; };
+		12E326CE1C41277800DA00C0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		12E326D01C41278500DA00C0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		12E326D21C41279400DA00C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12E326D41C41279C00DA00C0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		12E326D61C4127A800DA00C0 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		12E326D81C4127B600DA00C0 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		12E326DA1C4127BF00DA00C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		12E326DC1C4127C800DA00C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12E326DE1C4127D400DA00C0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		12E326E01C4127DD00DA00C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12E326E21C4127E500DA00C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		12E326E51C41286B00DA00C0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		12E326E71C41288600DA00C0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		12E326E91C412B6800DA00C0 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../../../../cocos2d-x-lib/external/curl/prebuilt/ios/libcurl.a"; sourceTree = "<group>"; };
+		12E327211C412D1F00DA00C0 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../../../Source/AppDelegate.cpp; sourceTree = "<group>"; };
+		12E327221C412D1F00DA00C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../Source/AppDelegate.h; sourceTree = "<group>"; };
+		12E327231C412D1F00DA00C0 /* AppMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../../../Source/AppMacros.h; sourceTree = "<group>"; };
+		12E327281C412DE600DA00C0 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		12E327291C412DE600DA00C0 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
+		12E3273A1C412DE600DA00C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E3273B1C412DE600DA00C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12E3273C1C412DE600DA00C0 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		12E3273D1C412DE600DA00C0 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
+		12F574181CA8354700C26D90 /* jsoncpp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = jsoncpp.xcodeproj; path = ../../../../Lib/json/project/xcode4/ios/jsoncpp.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12E3150F1C40E97D00DA00C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1267F7061CB30B1B008092F2 /* Social.framework in Frameworks */,
+				1267F7041CB30AC0008092F2 /* WebKit.framework in Frameworks */,
+				123E351A1CA99F6600018814 /* CoreMedia.framework in Frameworks */,
+				12AF66031CA94D3400D3E462 /* libcocos2dx_lib_iOS.a in Frameworks */,
+				1267F7001CB30A1F008092F2 /* AdColony.framework in Frameworks */,
+				127FCC191CA86F2A00C2656C /* AdSupport.framework in Frameworks */,
+				127FCC171CA86F0000C2656C /* EventKit.framework in Frameworks */,
+				127FCC151CA86EFB00C2656C /* EventKitUI.framework in Frameworks */,
+				127FCC131CA86ED000C2656C /* CoreText.framework in Frameworks */,
+				127FCC111CA86ECB00C2656C /* CoreTelephony.framework in Frameworks */,
+				127FCC0A1CA86DA200C2656C /* MessageUI.framework in Frameworks */,
+				127FCC081CA86D7B00C2656C /* MediaPlayer.framework in Frameworks */,
+				127FCC061CA86CF200C2656C /* SystemConfiguration.framework in Frameworks */,
+				127FCC021CA8685800C2656C /* GameKit.framework in Frameworks */,
+				12F574241CA8363300C26D90 /* libjsoncpp_d.a in Frameworks */,
+				12E327531C412F9000DA00C0 /* RKUtils_iOS.a in Frameworks */,
+				12E326EA1C412B6800DA00C0 /* libcurl.a in Frameworks */,
+				12E326E81C41288600DA00C0 /* Security.framework in Frameworks */,
+				12E326E61C41286B00DA00C0 /* libsqlite3.dylib in Frameworks */,
+				12E326E31C4127E500DA00C0 /* AVFoundation.framework in Frameworks */,
+				12E326E11C4127DD00DA00C0 /* UIKit.framework in Frameworks */,
+				12E326DF1C4127D400DA00C0 /* OpenGLES.framework in Frameworks */,
+				12E326DD1C4127C800DA00C0 /* CoreGraphics.framework in Frameworks */,
+				12E326DB1C4127BF00DA00C0 /* QuartzCore.framework in Frameworks */,
+				12E326D91C4127B600DA00C0 /* libiconv.dylib in Frameworks */,
+				12E326D71C4127A800DA00C0 /* OpenAL.framework in Frameworks */,
+				12E326D51C41279C00DA00C0 /* AudioToolbox.framework in Frameworks */,
+				127FCC041CA8685F00C2656C /* StoreKit.framework in Frameworks */,
+				12E326D31C41279400DA00C0 /* Foundation.framework in Frameworks */,
+				12E326D11C41278500DA00C0 /* libz.dylib in Frameworks */,
+				127FCBF01CA8657000C2656C /* Bolts.framework in Frameworks */,
+				12E326CF1C41277800DA00C0 /* CoreMotion.framework in Frameworks */,
+				127FCC0C1CA86E1400C2656C /* GoogleMobileAds.framework in Frameworks */,
+				127FCBF71CA8657400C2656C /* FacebookSDKStrings.bundle in Frameworks */,
+				127FCBF81CA8657400C2656C /* FBAudienceNetwork.framework in Frameworks */,
+				127FCBF91CA8657400C2656C /* FBSDKCoreKit.framework in Frameworks */,
+				127FCBFA1CA8657400C2656C /* FBSDKLoginKit.framework in Frameworks */,
+				127FCBFB1CA8657400C2656C /* FBSDKMessengerShareKit.framework in Frameworks */,
+				127FCBFC1CA8657400C2656C /* FBSDKShareKit.framework in Frameworks */,
+				12E326CC1C41275200DA00C0 /* libUti.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		127FCB431CA83FF100C2656C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				127FCB441CA83FF100C2656C /* GamePlay */,
+				127FCB4D1CA83FF100C2656C /* MainGame.cpp */,
+				127FCB4E1CA83FF100C2656C /* MainGame.h */,
+				127FCB4F1CA83FF100C2656C /* Menu */,
+			);
+			name = Game;
+			path = ../../../Source/Game;
+			sourceTree = "<group>";
+		};
+		127FCB441CA83FF100C2656C /* GamePlay */ = {
+			isa = PBXGroup;
+			children = (
+				127FCB451CA83FF100C2656C /* ActionPhaseManager.cpp */,
+				127FCB461CA83FF100C2656C /* ActionPhaseManager.h */,
+				127FCB471CA83FF100C2656C /* BasicUnit.cpp */,
+				127FCB481CA83FF100C2656C /* BasicUnit.h */,
+				127FCB491CA83FF100C2656C /* ControllableUnit.cpp */,
+				127FCB4A1CA83FF100C2656C /* ControllableUnit.h */,
+				127FCB4B1CA83FF100C2656C /* UnitManager.cpp */,
+				127FCB4C1CA83FF100C2656C /* UnitManager.h */,
+			);
+			path = GamePlay;
+			sourceTree = "<group>";
+		};
+		127FCB4F1CA83FF100C2656C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				12133A941CB2CA0F00F48C02 /* MenuEndGame.cpp */,
+				12133A951CB2CA0F00F48C02 /* MenuEndGame.h */,
+				120AA6C21CAAB8320038B2F9 /* MenuTutorial.cpp */,
+				120AA6C31CAAB8320038B2F9 /* MenuTutorial.h */,
+				127FCB501CA83FF100C2656C /* MenuEntityWrapper.cpp */,
+				127FCB511CA83FF100C2656C /* MenuEntityWrapper.h */,
+				127FCB521CA83FF100C2656C /* MenuHUD.cpp */,
+				127FCB531CA83FF100C2656C /* MenuHUD.h */,
+				127FCB541CA83FF100C2656C /* MenuIAP.cpp */,
+				127FCB551CA83FF100C2656C /* MenuIAP.h */,
+				127FCB561CA83FF100C2656C /* MenuInGame.cpp */,
+				127FCB571CA83FF100C2656C /* MenuInGame.h */,
+				127FCB581CA83FF100C2656C /* MenuMain.cpp */,
+				127FCB591CA83FF100C2656C /* MenuMain.h */,
+				127FCB5A1CA83FF100C2656C /* MenuManager.cpp */,
+				127FCB5B1CA83FF100C2656C /* MenuManager.h */,
+				127FCB5C1CA83FF100C2656C /* MenuPopUp.cpp */,
+				127FCB5D1CA83FF100C2656C /* MenuPopUp.h */,
+				127FCB5E1CA83FF100C2656C /* MenuSelectionLevel.cpp */,
+				127FCB5F1CA83FF100C2656C /* MenuSelectionLevel.h */,
+				127FCB601CA83FF100C2656C /* MenuSetting.cpp */,
+				127FCB611CA83FF100C2656C /* MenuSetting.h */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		12E315091C40E97D00DA00C0 = {
+			isa = PBXGroup;
+			children = (
+				12F574181CA8354700C26D90 /* jsoncpp.xcodeproj */,
+				12E326051C41208D00DA00C0 /* Uti.xcodeproj */,
+				12E325711C40F83600DA00C0 /* RKUtilsIOS_libs.xcodeproj */,
+				12E315911C40ECB500DA00C0 /* cocos2dx_lib_iOS.xcodeproj */,
+				12E326E41C4127EF00DA00C0 /* Framework */,
+				12E315141C40E97D00DA00C0 /* Game1 */,
+				12E327201C412D0E00DA00C0 /* Source */,
+				12E315131C40E97D00DA00C0 /* Products */,
+				12E327151C412CDA00DA00C0 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		12E315131C40E97D00DA00C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12E315121C40E97D00DA00C0 /* ColorLockPuzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12E315141C40E97D00DA00C0 /* Game1 */ = {
+			isa = PBXGroup;
+			children = (
+				12133AA31CB2E39D00F48C02 /* close-button.png */,
+				12E327281C412DE600DA00C0 /* AppController.h */,
+				12E327291C412DE600DA00C0 /* AppController.mm */,
+				12E3273A1C412DE600DA00C0 /* Info.plist */,
+				12E3273B1C412DE600DA00C0 /* main.m */,
+				12E3273C1C412DE600DA00C0 /* RootViewController.h */,
+				12E3273D1C412DE600DA00C0 /* RootViewController.mm */,
+				12133A991CB2CA6000F48C02 /* Images.xcassets */,
+			);
+			path = Game1;
+			sourceTree = "<group>";
+		};
+		12E325721C40F83600DA00C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12E325771C40F83600DA00C0 /* RKUtils_iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12E326061C41208D00DA00C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12E3260B1C41208E00DA00C0 /* libUti.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12E326E41C4127EF00DA00C0 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				1267F7051CB30B1B008092F2 /* Social.framework */,
+				1267F7031CB30AC0008092F2 /* WebKit.framework */,
+				1267F6FF1CB30A1F008092F2 /* AdColony.framework */,
+				123E35191CA99F6600018814 /* CoreMedia.framework */,
+				127FCC181CA86F2A00C2656C /* AdSupport.framework */,
+				127FCC161CA86F0000C2656C /* EventKit.framework */,
+				127FCC141CA86EFA00C2656C /* EventKitUI.framework */,
+				127FCC121CA86ED000C2656C /* CoreText.framework */,
+				127FCC101CA86ECB00C2656C /* CoreTelephony.framework */,
+				127FCC0B1CA86E1400C2656C /* GoogleMobileAds.framework */,
+				127FCC091CA86DA200C2656C /* MessageUI.framework */,
+				127FCC071CA86D7B00C2656C /* MediaPlayer.framework */,
+				127FCC051CA86CF200C2656C /* SystemConfiguration.framework */,
+				127FCC031CA8685F00C2656C /* StoreKit.framework */,
+				127FCC011CA8685800C2656C /* GameKit.framework */,
+				127FCBF11CA8657400C2656C /* FacebookSDKStrings.bundle */,
+				127FCBF21CA8657400C2656C /* FBAudienceNetwork.framework */,
+				127FCBF31CA8657400C2656C /* FBSDKCoreKit.framework */,
+				127FCBF41CA8657400C2656C /* FBSDKLoginKit.framework */,
+				127FCBF51CA8657400C2656C /* FBSDKMessengerShareKit.framework */,
+				127FCBF61CA8657400C2656C /* FBSDKShareKit.framework */,
+				127FCBEF1CA8657000C2656C /* Bolts.framework */,
+				12E326E91C412B6800DA00C0 /* libcurl.a */,
+				12E326E71C41288600DA00C0 /* Security.framework */,
+				12E326E51C41286B00DA00C0 /* libsqlite3.dylib */,
+				12E326E21C4127E500DA00C0 /* AVFoundation.framework */,
+				12E326E01C4127DD00DA00C0 /* UIKit.framework */,
+				12E326DE1C4127D400DA00C0 /* OpenGLES.framework */,
+				12E326DC1C4127C800DA00C0 /* CoreGraphics.framework */,
+				12E326DA1C4127BF00DA00C0 /* QuartzCore.framework */,
+				12E326D81C4127B600DA00C0 /* libiconv.dylib */,
+				12E326D61C4127A800DA00C0 /* OpenAL.framework */,
+				12E326D41C41279C00DA00C0 /* AudioToolbox.framework */,
+				12E326D21C41279400DA00C0 /* Foundation.framework */,
+				12E326D01C41278500DA00C0 /* libz.dylib */,
+				12E326CE1C41277800DA00C0 /* CoreMotion.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		12E327151C412CDA00DA00C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12DD2D3B1CB67FD60011E11D /* 0000_Test_custom.ark */,
+				12DD2D3C1CB67FD60011E11D /* Data */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		12E327201C412D0E00DA00C0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				127FCB431CA83FF100C2656C /* Game */,
+				12E327211C412D1F00DA00C0 /* AppDelegate.cpp */,
+				12E327221C412D1F00DA00C0 /* AppDelegate.h */,
+				12E327231C412D1F00DA00C0 /* AppMacros.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		12F573DC1CA8343600C26D90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12F573E11CA8343600C26D90 /* libcocos2dx_lib_iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12F574191CA8354700C26D90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12F5741F1CA8354700C26D90 /* libjsoncpp_d.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12E315111C40E97D00DA00C0 /* Game1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E315391C40E97E00DA00C0 /* Build configuration list for PBXNativeTarget "Game1" */;
+			buildPhases = (
+				12E3150E1C40E97D00DA00C0 /* Sources */,
+				12E3150F1C40E97D00DA00C0 /* Frameworks */,
+				12E315101C40E97D00DA00C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12E327591C41304200DA00C0 /* PBXTargetDependency */,
+				12E327571C41303F00DA00C0 /* PBXTargetDependency */,
+			);
+			name = Game1;
+			productName = Game1;
+			productReference = 12E315121C40E97D00DA00C0 /* ColorLockPuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12E3150A1C40E97D00DA00C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = qchien;
+				TargetAttributes = {
+					12E315111C40E97D00DA00C0 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = AAL5DL65W2;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 12E3150D1C40E97D00DA00C0 /* Build configuration list for PBXProject "Game1" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12E315091C40E97D00DA00C0;
+			productRefGroup = 12E315131C40E97D00DA00C0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 12F573DC1CA8343600C26D90 /* Products */;
+					ProjectRef = 12E315911C40ECB500DA00C0 /* cocos2dx_lib_iOS.xcodeproj */;
+				},
+				{
+					ProductGroup = 12F574191CA8354700C26D90 /* Products */;
+					ProjectRef = 12F574181CA8354700C26D90 /* jsoncpp.xcodeproj */;
+				},
+				{
+					ProductGroup = 12E325721C40F83600DA00C0 /* Products */;
+					ProjectRef = 12E325711C40F83600DA00C0 /* RKUtilsIOS_libs.xcodeproj */;
+				},
+				{
+					ProductGroup = 12E326061C41208D00DA00C0 /* Products */;
+					ProjectRef = 12E326051C41208D00DA00C0 /* Uti.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				12E315111C40E97D00DA00C0 /* Game1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		12E325771C40F83600DA00C0 /* RKUtils_iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = RKUtils_iOS.a;
+			remoteRef = 12E325761C40F83600DA00C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		12E3260B1C41208E00DA00C0 /* libUti.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUti.a;
+			remoteRef = 12E3260A1C41208E00DA00C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		12F573E11CA8343600C26D90 /* libcocos2dx_lib_iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcocos2dx_lib_iOS.a;
+			remoteRef = 12F573E01CA8343600C26D90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		12F5741F1CA8354700C26D90 /* libjsoncpp_d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsoncpp_d.a;
+			remoteRef = 12F5741E1CA8354700C26D90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12E315101C40E97D00DA00C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DD2D3D1CB67FD60011E11D /* 0000_Test_custom.ark in Resources */,
+				12133AA41CB2E39D00F48C02 /* close-button.png in Resources */,
+				12133A9A1CB2CA6000F48C02 /* Images.xcassets in Resources */,
+				12DD2D3E1CB67FD60011E11D /* Data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12E3150E1C40E97D00DA00C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				127FCB6A1CA83FF100C2656C /* MenuInGame.cpp in Sources */,
+				12E3273E1C412DE600DA00C0 /* AppController.mm in Sources */,
+				127FCB671CA83FF100C2656C /* MenuEntityWrapper.cpp in Sources */,
+				127FCB641CA83FF100C2656C /* ControllableUnit.cpp in Sources */,
+				12E327511C412DE600DA00C0 /* RootViewController.mm in Sources */,
+				127FCB6B1CA83FF100C2656C /* MenuMain.cpp in Sources */,
+				127FCB651CA83FF100C2656C /* UnitManager.cpp in Sources */,
+				127FCB6D1CA83FF100C2656C /* MenuPopUp.cpp in Sources */,
+				12E327261C412D1F00DA00C0 /* AppDelegate.cpp in Sources */,
+				127FCB6F1CA83FF100C2656C /* MenuSetting.cpp in Sources */,
+				127FCB6E1CA83FF100C2656C /* MenuSelectionLevel.cpp in Sources */,
+				12E327501C412DE600DA00C0 /* main.m in Sources */,
+				127FCB691CA83FF100C2656C /* MenuIAP.cpp in Sources */,
+				127FCB681CA83FF100C2656C /* MenuHUD.cpp in Sources */,
+				12133A961CB2CA0F00F48C02 /* MenuEndGame.cpp in Sources */,
+				120AA6C41CAAB8320038B2F9 /* MenuTutorial.cpp in Sources */,
+				127FCB661CA83FF100C2656C /* MainGame.cpp in Sources */,
+				127FCB631CA83FF100C2656C /* BasicUnit.cpp in Sources */,
+				127FCB6C1CA83FF100C2656C /* MenuManager.cpp in Sources */,
+				127FCB621CA83FF100C2656C /* ActionPhaseManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12E327571C41303F00DA00C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RKUtilsIOS_Libs;
+			targetProxy = 12E327561C41303F00DA00C0 /* PBXContainerItemProxy */;
+		};
+		12E327591C41304200DA00C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Uti;
+			targetProxy = 12E327581C41304200DA00C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12E315371C40E97E00DA00C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				SDKROOT = iphoneos;
+				STRIP_PNG_TEXT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../../../../cocos2d-x-lib ../../../../cocos2d-x-lib/cocos ../../../../cocos2d-x-lib/cocos/editor-support ../../../../cocos2d-x-lib/extensions ../../../../cocos2d-x-lib/external ../../../../cocos2d-x-lib/external/chipmunk/include/chipmunk";
+				VALID_ARCHS = "$(VALID_ARCHS)";
+			};
+			name = Debug;
+		};
+		12E315381C40E97E00DA00C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					NDEBUG,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				SDKROOT = iphoneos;
+				STRIP_PNG_TEXT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../../../../cocos2d-x-lib ../../../../cocos2d-x-lib/cocos ../../../../cocos2d-x-lib/cocos/editor-support ../../../../cocos2d-x-lib/extensions ../../../../cocos2d-x-lib/external ../../../../cocos2d-x-lib/external/chipmunk/include/chipmunk";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "$(VALID_ARCHS)";
+			};
+			name = Release;
+		};
+		12E3153A1C40E97E00DA00C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Volumes/Project/ProjGame/Cocos2D/Lib/FacebookSDK/iOS,
+					/Volumes/Project/ProjGame/Cocos2D/Lib/Ads/Admob/iOS,
+					/Volumes/Project/ProjGame/Cocos2D/Lib/Ads/AdColony/iOS,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					CC_TARGET_OS_IPHONE,
+					GAME_IOS,
+					OS_IOS,
+					_LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Game1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/Project/ProjGame/Cocos2D/cocos2d-x-lib/external/curl/prebuilt/ios",
+					"/Volumes/Project/ProjGame/Cocos2D/Game_LockPuzzle/Project/iOS/cocos2dx_lib_iOS/build/Debug-iphoneos",
+					/Volumes/Project/ProjGame/Cocos2D/Lib/Ads/Admob/iOS,
+					/Volumes/Project/ProjGame/Cocos2D/Lib/FacebookSDK/iOS,
+					/Volumes/Project/ProjGame/Cocos2D/Lib/Ads/AdColony/iOS,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FlowerFX-ColorLockPuzzle";
+				PRODUCT_NAME = ColorLockPuzzle;
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "../../../../cocos2d-x-lib ../../../../cocos2d-x-lib/cocos ../../../../cocos2d-x-lib/cocos/editor-support ../../../../cocos2d-x-lib/extensions ../../../../cocos2d-x-lib/external ../../../../cocos2d-x-lib/external/chipmunk/include/chipmunk ../../../../cocos2d-x-lib/cocos/platform/ios ../../../../cocos2d-x-lib/cocos/platform/ios/Simulation ../../../../cocos2d-x-lib/external/curl/include/ios ../../../Source ../../../../Lib/RKUtils/Code ../../../../Utility/Code";
+			};
+			name = Debug;
+		};
+		12E3153B1C40E97E00DA00C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Volumes/Project/ProjGame/Cocos2D/Lib/FacebookSDK/iOS,
+					/Volumes/Project/ProjGame/Cocos2D/Lib/Ads/Admob/iOS,
+					/Volumes/Project/ProjGame/Cocos2D/Lib/Ads/AdColony/iOS,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					NDEBUG,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					CC_TARGET_OS_IPHONE,
+					OS_IOS,
+					GAME_IOS,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Game1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/Project/ProjGame/Cocos2D/cocos2d-x-lib/external/curl/prebuilt/ios",
+					"/Volumes/Project/ProjGame/Cocos2D/Game_LockPuzzle/Project/iOS/cocos2dx_lib_iOS/build/Debug-iphoneos",
+					/Volumes/Project/ProjGame/Cocos2D/Lib/Ads/Admob/iOS,
+					/Volumes/Project/ProjGame/Cocos2D/Lib/FacebookSDK/iOS,
+					/Volumes/Project/ProjGame/Cocos2D/Lib/Ads/AdColony/iOS,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FlowerFX-ColorLockPuzzle";
+				PRODUCT_NAME = ColorLockPuzzle;
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "../../../../cocos2d-x-lib ../../../../cocos2d-x-lib/cocos ../../../../cocos2d-x-lib/cocos/editor-support ../../../../cocos2d-x-lib/extensions ../../../../cocos2d-x-lib/external ../../../../cocos2d-x-lib/external/chipmunk/include/chipmunk ../../../../cocos2d-x-lib/cocos/platform/ios ../../../../cocos2d-x-lib/cocos/platform/ios/Simulation ../../../../cocos2d-x-lib/external/curl/include/ios ../../../Source ../../../../Lib/RKUtils/Code ../../../../Utility/Code";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12E3150D1C40E97D00DA00C0 /* Build configuration list for PBXProject "Game1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E315371C40E97E00DA00C0 /* Debug */,
+				12E315381C40E97E00DA00C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12E315391C40E97E00DA00C0 /* Build configuration list for PBXNativeTarget "Game1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E3153A1C40E97E00DA00C0 /* Debug */,
+				12E3153B1C40E97E00DA00C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12E3150A1C40E97D00DA00C0 /* Project object */;
+}

@@ -1,0 +1,23 @@
+<GAME>
+	<ListScene>
+		<Scene id="0" name="desert">
+			<skybox>
+				<tex id="0" type="UP"    name="Texture\Scene3D\Scene_1\skybox\up.png"/>
+				<tex id="1" type="DOWN"  name="Texture\Scene3D\Scene_1\skybox\down.png"/>
+				<tex id="2" type="LEFT"  name="Texture\Scene3D\Scene_1\skybox\left.png"/>
+				<tex id="3" type="RIGHT" name="Texture\Scene3D\Scene_1\skybox\right.png"/>
+				<tex id="4" type="FRONT" name="Texture\Scene3D\Scene_1\skybox\forward.png"/>
+				<tex id="5" type="BACK"  name="Texture\Scene3D\Scene_1\skybox\back.png"/>		
+			</skybox>
+			<terrain 	chunk_size="32_32" map_height="150" map_scale="2.0" >
+				<tex	id="0" type="tex_height_map" name = "Texture\Scene3D\Scene_1\terrain\height_map.jpg"/>
+				<tex	id="1" type="tex_alpha_map" name = "Texture\Scene3D\Scene_1\terrain\alpha_map.png"/>
+				<tex	id="2" type="tex_light_map" name = ""/>
+				<tex	id="3" type="tex_1" name = "Texture\Scene3D\Scene_1\terrain\dirt.jpg"/>
+				<tex	id="4" type="tex_2" name = "Texture\Scene3D\Scene_1\terrain\sand.jpg"/>
+				<tex	id="5" type="tex_3" name = "Texture\Scene3D\Scene_1\terrain\Grass2.jpg"/>
+				<tex	id="6" type="tex_4" name = "Texture\Scene3D\Scene_1\terrain\Grass1.jpg"/>	
+			</terrain>
+		</Scene>
+	</ListScene>
+</GAME>

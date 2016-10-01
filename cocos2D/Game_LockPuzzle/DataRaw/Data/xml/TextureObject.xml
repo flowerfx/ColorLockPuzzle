@@ -1,0 +1,109 @@
+<GAME>
+	<texture>
+		<textureDetail id="0" namepath="Texture\atlas_1" name="atlas_1" win32=".png" ios=".pvr">
+			<sprite id="0" name="start_btn" 			rect="0-0-200-200"/>
+			<sprite id="1" name="setting_btn" 			rect="204-0-200-200"/>
+			<sprite id="2" name="shop_btn" 				rect="408-0-200-200"/>
+			<sprite id="3" name="leaderboard_btn" 		rect="612-0-200-200"/>
+			<sprite id="4" name="music_btn" 			rect="816-0-200-200"/>
+			<sprite id="5" name="sound_btn" 			rect="1020-0-200-200"/>
+			<sprite id="6" name="info_btn" 				rect="1224-0-200-200"/>
+			<sprite id="7" name="facebook_btn" 			rect="1428-0-200-200"/>
+			<sprite id="8" name="gamecenter_btn" 		rect="1632-0-200-200"/>
+			<sprite id="9" name="goggle_btn" 			rect="1836-0-200-200"/>
+			
+			<sprite id="10" name="back_btn" 			rect="0-204-200-200"/>
+			<sprite id="11" name="email_btn" 			rect="204-204-200-200"/>
+			<sprite id="12" name="home_btn" 			rect="408-204-200-200"/>
+			<sprite id="13" name="next_btn" 			rect="612-204-200-200"/>
+			<sprite id="14" name="pause_btn" 			rect="816-204-200-200"/>
+			<sprite id="15" name="reload_btn" 			rect="1020-204-200-200"/>
+			<sprite id="16" name="hint_btn" 			rect="1224-204-200-200"/>
+			<sprite id="17" name="continue_btn" 		rect="1428-204-200-200"/>
+			<sprite id="18" name="square_btn" 			rect="1632-204-200-200"/>
+			
+			<sprite id="19" name="cancel_btn" 			rect="408-408-168-168"/>
+			<sprite id="20" name="ok_btn" 				rect="580-408-168-168"/>
+			<sprite id="21" name="long400x100_btn" 		rect="752-408-400-100"/>
+			<sprite id="22" name="long400x75_btn" 		rect="752-512-400-74"/>
+			<sprite id="23" name="long300x100_btn" 		rect="618-612-300-100"/>
+			<sprite id="24" name="rating_btn" 			rect="232-612-200-200"/>
+			<sprite id="25" name="add_btn" 				rect="438-612-172-172"/>
+			
+			
+			<sprite id="26" name="off_state" 			rect="1158-408-200-200"/>
+			<sprite id="27" name="on_state" 			rect="1364-408-200-200"/>
+			<sprite id="28" name="fb_state" 			rect="1570-408-172-172"/>
+			<sprite id="23" name="cicrle_stencil" 		rect="1746-412-172-172"/>
+			<sprite id="29" name="lock_on" 				rect="1942-412-60-96"/>
+			<sprite id="30" name="lock_off" 			rect="1936-524-58-58"/>
+			
+			<sprite id="32" name="node_pattern_bg" 		rect="0-408-200-200"/>
+			<sprite id="33" name="node_pattern_sl" 		rect="204-408-200-200"/>
+			<sprite id="34" name="node_pattern_hl" 		rect="0-612-226-226"/>
+			
+			<sprite id="35" name="cicle_icon" 			rect="1844-204-100-100"/>
+			<sprite id="36" name="movie_icon" 			rect="1844-308-100-100"/>
+			<sprite id="37" name="iap_hint_icon" 		rect="1960-204-82-84"/>
+			<sprite id="38" name="remove_ads_icon" 		rect="1966-312-62-84"/>
+			
+			<sprite id="39" name="panel_long_option" 	rect="1092-1482-140-565"/>
+			<sprite id="40" name="panel_black" 			rect="1238-1325-120-200"/>
+			<sprite id="41" name="pane_square_1" 		rect="1238-1529-464-520"/>
+			<sprite id="42" name="pink_panel" 			rect="1362-1006-332-520"/>
+			<sprite id="43" name="pink_opacity_panel" 	rect="1706-1448-341-600"/>
+			<sprite id="44" name="panel_select_game" 	rect="1698-938-350-506"/>
+			<sprite id="45" name="panel_popup" 			rect="624-1674-464-374"/>
+			
+			<sprite id="46" name="restore_purchase_btn" rect="926-612-200-200"/>
+			<sprite id="47" name="lock_icon" 			rect="1140-612-170-200"/>
+			<sprite id="48" name="text_logo_icon" 		rect="1326-612-436-212"/>
+			
+			<sprite id="49" name="background_img" 		rect="0-1250-480-800"/>
+			<sprite id="50" name="long400x75_btn_blue" 	rect="0-838-400-74"/>
+			<sprite id="51" name="long400x75_btn_red" 	rect="0-918-400-74"/>
+			<sprite id="52" name="long400x75_btn_green" rect="0-998-400-74"/>
+			<sprite id="52" name="btn_start_level" 		rect="1774-612-168-168"/>
+			<sprite id="53" name="hl_link" 				rect="620-720-186-78"/>
+			
+			<sprite id="54" name="panel_1_IGM" 			rect="408-800-480-160"/>
+			<sprite id="55" name="hint_circle_ico" 		rect="0-1078-168-168"/>
+			<sprite id="56" name="move_diagonally_ico" 	rect="174-1084-160-162"/>
+			<sprite id="57" name="hand_tut_ico_1" 		rect="344-1094-126-142"/>
+			<sprite id="58" name="radio_btn_on" 		rect="1954-604-58-58"/>
+			<sprite id="59" name="radio_btn_off" 		rect="1954-672-58-58"/>
+			<sprite id="60" name="score_panel" 			rect="896-824-458-188"/>
+		</textureDetail>
+		<textureDetail id="1" namepath="Texture\effect" name="effect" win32=".png" ios=".png">
+			<sprite id="0" name="beam_light" 			rect="0-0-348-134"/>
+			<sprite id="1" name="dot_light" 			rect="356-0-156-156"/>
+			<sprite id="2" name="halo_light" 			rect="412-158-100-100"/>
+			<sprite id="3" name="effect_little_fire" 	rect="0-370-30-30"/>
+			<sprite id="4" name="effect_big_fire" 		rect="0-404-60-60"/>
+			<sprite id="5" name="effect_little_napalm" 	rect="62-370-30-30"/>
+			<sprite id="6" name="effect_big_napalm" 	rect="68-404-60-60"/>
+			<sprite id="7" name="effect_glow_star" 		rect="38-482-30-30"/>
+			<sprite id="8" name="effect_blue_snow"  	rect="0-482-32-28"/>
+			<sprite id="9" name="effect_glow_point"    	rect="70-482-32-32"/>
+			<sprite id="10" name="effect_glow_snow" 	rect="104-482-30-30"/>
+			<sprite id="11" name="effect_blue_distorted"rect="141-482-32-8"/>
+			<sprite id="12" name="effect_edge_star" 	rect="203-482-26-24"/>
+			<sprite id="13" name="effect_yellow_star"   rect="230-482-26-26"/>
+			<sprite id="14" name="effect_add_icon"    	rect="134-374-56-56"/>
+			<sprite id="15" name="yeallow_halo"    		rect="0-138-116-116"/>
+			<sprite id="16" name="dot_light_1"    		rect="372-372-140-140"/>
+			<sprite id="17" name="line_light"    		rect="119-170-274-38"/>
+		</textureDetail>
+	</texture>
+	<font>
+		<fontdetail id="0" namepath="fonts\FredokaOne-Regular.ttf" name="FredokaOne">
+			<default size="60" color="255_255_255_255" borderwdx="1" colorborder="36_72_228_255" unicode="0"/>
+		</fontdetail>
+		<fontdetail id="1" namepath="fonts\arial.ttf" name="arial">
+			<default size="48" color="255_255_255_255" borderwdx="1" colorborder="36_72_228_255" unicode="1"/>
+		</fontdetail>
+		<fontdetail id="2" namepath="fonts\impact.ttf" name="Impact">
+			<default size="80" color="255_255_255_255" borderwdx="1" colorborder="36_72_228_255" unicode="0"/>
+		</fontdetail>
+	</font>
+</GAME>

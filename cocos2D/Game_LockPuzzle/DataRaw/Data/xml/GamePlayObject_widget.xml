@@ -1,0 +1,852 @@
+<GAME>
+	<Object designSize="480_800">
+		<!--
+			define action process of basic object during the timelife of its
+			include :
+				load sprite or amature (must be al least one)
+				load framesprite if sprite is loaded
+				the position is not needed
+				the size is define the origin size of it designSize and the detal is the size scale up and down with detal in time and times of loop
+				opacity is the alpha of object change from origin to first and reserve
+				Rotate is the origin angle of object and if it rotate to another angle (often 360) in time and times of loop
+				RotateObj is the rotation around the another object with distance , time rotate by a circle and times of loop (may be not work at this time)
+				Color is the origin color (often WHITE) and the target color to change to with time and times of loop	
+		<detailobject  id="0" name = "">
+			<Main 	type_object ="0" stick_screen="0"/> // 0 is sprite / 1 is amature / 2 is Animate / 3 is text / 4 is processtimer
+			<Source name =""/> 
+			<Animature name ="" speed_scale ="" playByIndex="" >
+				<pathTexture 	path=""	/>
+				<pathPlist 		path=""	/>
+				<pathJson 		path=""	/>
+			</Animature>
+			<Animate source ="" time_delay="" loop ="-1" tag = "">
+				<sprite source =""/>
+				<sprite source =""/>
+				<sprite source =""/>
+				<sprite source =""/>
+				<sprite source =""/>
+				<sprite source =""/>
+			</Animate>
+			<Text name="" 
+				  IdxFont="" 
+				  size="" 
+				  border_w="" 
+				  color_border=""/>
+			
+			<detailobject>
+				....
+			</detailobject>
+
+			
+			<Pos  		origin ="" 			 	  />
+			<Size 		origin =""  			  />
+			<Opacity 	origin =""   			  />
+			<Rotate		origin =""   	 		  />
+			<Color		origin ="255_255_255_255" />
+			<anchor		origin = "0.5_0.5"		  />	
+			<Process	origin ="100" 			  />
+			
+			<COMMAND>
+				<cmd></cmd>
+				<cmd></cmd>
+				...
+			</COMMAND>
+		</detailobject>
+		-->
+		<detailobject  id="0" name = "object_node_bg">
+			<Main 	type_object ="0" stick_screen="0" visible = "1"/>
+			<Source 	name ="node_pattern_bg"/>
+			<Size 		origin="76_76" 		/>
+			<Opacity 	origin ="255"   	first = "0"/>
+			<detailobject  id="1" name = "hight_light_obj">
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="node_pattern_hl"/>
+				<Pos  		origin= "38_38" />
+				<Size 		origin="0_0" 	/>
+				<COMMAND>
+					<cmd id="0" name="ZOOM_ACTION">
+						{
+							"act0": {
+								"single_1" : 
+								{	
+										"SIZE":"84_84",
+										"DESIGN":"480_800",
+										"STICK": 0,
+										"TIME":0.2
+								},
+								"single_2":{
+									"OPACITY":255,
+									"TIME":0.2
+								}
+							}		
+						}					
+					</cmd>
+					<cmd id="1" name="ZOOM_ACTION_1">
+						{
+							"act0": {
+								"single_1" : 
+								{	
+										"SIZE":"0_0",
+										"DESIGN":"480_800",
+										"STICK": 0,
+										"TIME":0.2
+								},
+								"single_2":{
+									"OPACITY":0,
+									"TIME":0.2
+								}
+							}		
+						}					
+					</cmd>
+				</COMMAND>
+			</detailobject>
+			
+			<detailobject  id="2"  name = "object_node_select">
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="node_pattern_sl"/>
+				<Pos  		origin= "38_38" />
+				<Size 		origin="0_0" 	/>
+				<opacity 	origin="0" 	/>
+				<COMMAND>
+					<cmd id="0" name="ZOOM_ACTION">
+						{
+							"act0": {
+								"squence" : [
+									{	
+										"SIZE":"66_66",
+										"DESIGN":"480_800",
+										"STICK": 0,
+										"TIME":0.2
+									}
+								],
+								"single":{
+									"OPACITY":255,
+									"TIME":0.2
+								}
+							}		
+						}					
+					</cmd>
+					<cmd id="1" name="ZOOM_ACTION_1">
+						{
+							"act0": {
+								"squence" : [
+									{	
+										"SIZE":"77_77",
+										"DESIGN":"480_800",
+										"STICK": 0,
+										"TIME":0.1
+									},
+									{	
+										"SIZE":"0_0",
+										"DESIGN":"480_800",
+										"STICK": 0,
+										"TIME":0.2
+									}
+								]
+							}		
+						}					
+					</cmd>
+					<cmd id="2" name="ZOOM_ACTION_2">
+						{
+							"act0": {
+								"repeat" : 2,
+								"squence_1" : [
+									{	
+										"SIZE":"77_77",
+										"DESIGN":"480_800",
+										"STICK": 0,
+										"TIME":0.1
+									},
+									{	
+										"SIZE":"66_66",
+										"DESIGN":"480_800",
+										"STICK": 0,
+										"TIME":0.1
+									}
+								],
+								"single":{
+										"OPACITY":255,
+										"TIME":0.2
+									}
+							}		
+						}					
+					</cmd>
+					<cmd id="3" name="HL_DELAY">
+						{
+							"act0" :{
+								"squence" : [
+									{
+										"SET_SIZE" : "0_0",
+										"DESIGN":"480_800"
+									},
+									{
+										"SET_OPACITY" : 0
+									},
+									{
+										"DELAY" : 0.5
+									}
+								]
+							},
+							"act1": {
+								"single_1" : {	
+									"SIZE":"66_66",
+									"DESIGN":"480_800",
+									"STICK": 0,
+									"TIME":0.5
+								},
+								"single_2":{
+									"OPACITY":255,
+									"TIME":0.2
+								}
+							}		
+						}					
+					</cmd>
+					<cmd id="4" name="MOVE_JUMP">
+						{
+							"act0" :{
+								"squence" : [
+									{
+										"SET_SIZE" : "76_76",
+										"DESIGN":"480_800"
+									},							
+									{
+										"SET_OPACITY" : 255
+									}
+								]
+							},
+							"act1" :{
+								"single" : 
+								{
+									"JUMP_TO" : "0_0",
+									"JUMP_HEIGHT" : 100,
+									"JUMP_NUM" : 1,							
+									"DESIGN":"480_800",
+									"STYLE":0,
+									"TIME":0.5
+								},
+								"single_1" : 
+								{
+									"SIZE":"0_0",
+									"DESIGN":"480_800",
+									"STICK": 0,
+									"TIME":0.5
+								},
+								"single_2" : 
+								{
+									"OPACITY":0,
+									"TIME":0.5
+								}				
+							}
+							
+						}					
+					</cmd>
+				
+				</COMMAND>
+			</detailobject>
+			<detailobject  id="17" name = "lock_off">
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="lock_off" />
+				<Pos  		origin= "38_21" />
+				<Size 		origin ="42_42"  />
+			</detailobject>
+			<detailobject  id="18" name = "lock_on" >
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="lock_on" />
+				<Pos  		origin= "38_32" />
+				<Size 		origin ="42_67"/>
+			</detailobject>
+			<detailobject  id="21" name = "develope_text" >
+				<Main 		type_object ="3" 
+							stick_screen="0" 
+							visible="0" />
+				
+				<Text 		name="text" 
+							IdxFont="2" 
+							size="15_15" 
+							color = "255_0_0_255"/>
+							
+				<Pos  		origin= "38_21" />
+				<Size 		origin ="15_15" />
+				<Color		origin = "255_0_0_255"/>
+				
+			</detailobject>
+			<COMMAND>
+				<cmd id="0" name="FADE_IN">
+					{
+						"act0": {
+							"single_1" : 
+							{	
+									"POSITION":"0_-100",
+									"DESIGN":"480_800",
+									"STYLE": 2,
+									"TIME":0.2
+							},
+							"single_2":{
+								"OPACITY":0,
+								"TIME":0.2
+							}
+						},
+						"act1": {
+							"single_1" : {	
+									"POSITION":"0_100",
+									"DESIGN":"480_800",
+									"STYLE": 2,
+									"TIME":0.2
+							},
+							"single_2":{
+								"OPACITY":255,
+								"TIME":0.2
+							}
+						}		
+					}					
+					</cmd>
+				<cmd id="1" name="FADE_OUT">
+					{
+						"act0": {
+							"single_1" : 
+							{	
+									"POSITION":"0_-100",
+									"DESIGN":"480_800",
+									"STYLE": 2,
+									"TIME":0.2
+							},
+							"single_2":{
+								"OPACITY":0,
+								"TIME":0.2
+							}
+						}		
+					}					
+				</cmd>
+				<cmd id="2" name="RESET">
+					{
+						"act0": {
+							"squence" : 
+							[
+								{
+									"SIZE":"86_86",
+									"DESIGN":"480_800",
+									"STICK": 0,
+									"TIME":0.1
+								},
+								{
+									"SIZE":"10_10",
+									"DESIGN":"480_800",
+									"STICK": 0,
+									"TIME":0.1
+								},
+								{
+									"SIZE":"76_76",
+									"DESIGN":"480_800",
+									"STICK": 0,
+									"TIME":0.2
+								}
+							]
+						}		
+					}					
+				</cmd>
+				<cmd id="3" name="HINT_HL">
+					{
+						"act0": {
+							"squence" : 
+							[
+								{
+									"SIZE":"56_56",
+									"DESIGN":"480_800",
+									"STICK": 0,
+									"TIME":0.1
+								},
+								{
+									"SIZE":"76_76",
+									"DESIGN":"480_800",
+									"STICK": 0,
+									"TIME":0.2
+								}
+							]
+						}		
+					}					
+				</cmd>
+					
+			</COMMAND>
+		</detailobject>
+		<detailobject  id="12" name = "hint_obj">
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="hand_tut_ico_1"/>
+				<Pos  		origin= "0_0" />
+				<Size 		origin="92_102" 	/>		
+		</detailobject>
+		<detailobject  id="13" name = "link_obj_hl">
+			<Main 	type_object ="0" stick_screen="0" visible="1"/>
+			<Source 	name ="hl_link"/>
+			<Size 		origin="57_41"/>
+			<Opacity 	origin ="255" />
+		</detailobject>
+		<detailobject  id="14" name = "hint_mini_node">
+			<Main 	type_object ="0" stick_screen="0" visible="0"/>
+			<Source 	name ="hint_circle_ico"/>
+			<Size 		origin="36_36"/>
+			<Pos  		origin= "0_0" />
+		</detailobject>
+		<detailobject  id="21" name = "text_fly">
+			<Main 	type_object ="3" stick_screen="0" visible="1" />
+			<Text 	name="text" IdxFont="2" size="30" border_w="2" border_color="255_0_255_255"/>
+			<Size 	origin ="20_20" />
+			<Process	origin ="0"/>
+		</detailobject>
+	</Object>
+	<Object_ipad designSize="768_1024">
+		<!--
+			define action process of basic object during the timelife of its
+			include :
+				load sprite or amature (must be al least one)
+				load framesprite if sprite is loaded
+				the position is not needed
+				the size is define the origin size of it designSize and the detal is the size scale up and down with detal in time and times of loop
+				opacity is the alpha of object change from origin to first and reserve
+				Rotate is the origin angle of object and if it rotate to another angle (often 360) in time and times of loop
+				RotateObj is the rotation around the another object with distance , time rotate by a circle and times of loop (may be not work at this time)
+				Color is the origin color (often WHITE) and the target color to change to with time and times of loop	
+		<detailobject  id="0" name = "">
+			<Main 	type_object ="0" stick_screen="0"/> // 0 is sprite / 1 is amature / 2 is Animate / 3 is text / 4 is processtimer
+			<Source name =""/> 
+			<Animature name ="" speed_scale ="" playByIndex="" >
+				<pathTexture 	path=""	/>
+				<pathPlist 		path=""	/>
+				<pathJson 		path=""	/>
+			</Animature>
+			<Animate source ="" time_delay="" loop ="-1" tag = "">
+				<sprite source =""/>
+				<sprite source =""/>
+				<sprite source =""/>
+				<sprite source =""/>
+				<sprite source =""/>
+				<sprite source =""/>
+			</Animate>
+			<Text name="" 
+				  IdxFont="" 
+				  size="" 
+				  border_w="" 
+				  color_border=""/>
+			
+			<detailobject>
+				....
+			</detailobject>
+
+			
+			<Pos  		origin ="" 			 	  />
+			<Size 		origin =""  			  />
+			<Opacity 	origin =""   			  />
+			<Rotate		origin =""   	 		  />
+			<Color		origin ="255_255_255_255" />
+			<anchor		origin = "0.5_0.5"		  />	
+			<Process	origin ="100" 			  />
+			
+			<COMMAND>
+				<cmd></cmd>
+				<cmd></cmd>
+				...
+			</COMMAND>
+		</detailobject>
+		-->
+		<detailobject  id="0" name = "object_node_bg">
+			<Main 	type_object ="0" stick_screen="0" visible = "1"/>
+			<Source 	name ="node_pattern_bg"/>
+			<Size 		origin="96_96" 		/>
+			<Opacity 	origin ="255"   	first = "0"/>
+			<detailobject  id="1" name = "hight_light_obj">
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="node_pattern_hl"/>
+				<Pos  		origin= "48_48" />
+				<Size 		origin="0_0" 	/>
+				<COMMAND>
+					<cmd id="0" name="ZOOM_ACTION">
+						{
+							"act0": {
+								"single_1" : 
+								{	
+										"SIZE":"116_116",
+										"DESIGN":"768_1024",
+										"STICK": 0,
+										"TIME":0.2
+								},
+								"single_2":{
+									"OPACITY":255,
+									"TIME":0.2
+								}
+							}		
+						}					
+					</cmd>
+					<cmd id="1" name="ZOOM_ACTION_1">
+						{
+							"act0": {
+								"single_1" : 
+								{	
+										"SIZE":"0_0",
+										"DESIGN":"1024_768",
+										"STICK": 0,
+										"TIME":0.2
+								},
+								"single_2":{
+									"OPACITY":0,
+									"TIME":0.2
+								}
+							}		
+						}					
+					</cmd>
+				</COMMAND>
+			</detailobject>
+			
+			<detailobject  id="2"  name = "object_node_select">
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="node_pattern_sl"/>
+				<Pos  		origin= "48_48" />
+				<Size 		origin="0_0" 	/>
+				<opacity 	origin="0" 	/>
+				<COMMAND>
+					<cmd id="0" name="ZOOM_ACTION">
+						{
+							"act0": {
+								"squence" : [
+									{	
+										"SIZE":"86_86",
+										"DESIGN":"768_1024",
+										"STICK": 0,
+										"TIME":0.2
+									}
+								],
+								"single":{
+									"OPACITY":255,
+									"TIME":0.2
+								}
+							}		
+						}					
+					</cmd>
+					<cmd id="1" name="ZOOM_ACTION_1">
+						{
+							"act0": {
+								"squence" : [
+									{	
+										"SIZE":"96_96",
+										"DESIGN":"768_1024",
+										"STICK": 0,
+										"TIME":0.1
+									},
+									{	
+										"SIZE":"0_0",
+										"DESIGN":"768_1024",
+										"STICK": 0,
+										"TIME":0.2
+									}
+								]
+							}		
+						}					
+					</cmd>
+					<cmd id="2" name="ZOOM_ACTION_2">
+						{
+							"act0": {
+								"repeat" : 2,
+								"squence_1" : [
+									{	
+										"SIZE":"96_96",
+										"DESIGN":"768_1024",
+										"STICK": 0,
+										"TIME":0.1
+									},
+									{	
+										"SIZE":"86_86",
+										"DESIGN":"768_1024",
+										"STICK": 0,
+										"TIME":0.1
+									}
+								],
+								"single":{
+										"OPACITY":255,
+										"TIME":0.2
+									}
+							}		
+						}					
+					</cmd>
+					<cmd id="3" name="HL_DELAY">
+						{
+							"act0" :{
+								"squence" : [
+									{
+										"SET_SIZE" : "0_0",
+										"DESIGN":"768_1024"
+									},
+									{
+										"SET_OPACITY" : 0
+									},
+									{
+										"DELAY" : 0.5
+									}
+								]
+							},
+							"act1": {
+								"single_1" : {	
+									"SIZE":"86_86",
+									"DESIGN":"768_1024",
+									"STICK": 0,
+									"TIME":0.5
+								},
+								"single_2":{
+									"OPACITY":255,
+									"TIME":0.2
+								}
+							}		
+						}					
+					</cmd>
+					<cmd id="4" name="MOVE_JUMP">
+						{
+							"act0" :{
+								"squence" : [
+									{
+										"SET_SIZE" : "86_86",
+										"DESIGN":"768_1024"
+									},
+									{
+										"SET_POSITION" : "0_0",
+										"DESIGN":"768_1024"
+									},
+									{
+										"SET_OPACITY" : 255
+									}
+								]
+							},
+							"act1" :{
+								"single" : 
+								{
+									"JUMP_TO" : "0_0",
+									"JUMP_HEIGHT" : 120,
+									"JUMP_NUM" : 1,							
+									"DESIGN":"768_1024",
+									"STYLE":0,
+									"TIME":0.5
+								},
+								"single_1" : 
+								{
+										"SIZE":"0_0",
+										"DESIGN":"768_1024",
+										"STICK": 0,
+										"TIME":0.5
+								},
+								"single_2" : 
+								{
+										"OPACITY":0,
+										"TIME":0.5
+								}				
+							}
+						}					
+					</cmd>
+					
+				</COMMAND>
+			</detailobject>
+			<detailobject  id="17" name = "lock_off">
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="lock_off" />
+				<Pos  		origin= "48_31" />
+				<Size 		origin ="42_42"  />
+			</detailobject>
+			<detailobject  id="18" name = "lock_on" >
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="lock_on" />
+				<Pos  		origin= "48_42" />
+				<Size 		origin ="42_67"/>
+			</detailobject>
+			<detailobject  id="21" name = "develope_text" >
+				<Main 		type_object ="3" 
+							stick_screen="0" 
+							visible="0" />
+				
+				<Text 		name="text" 
+							IdxFont="2" 
+							size="15_15" 
+							color = "255_0_0_255"/>
+							
+				<Pos  		origin= "48_31" />
+				<Size 		origin ="15_15" />
+				<Color		origin = "255_0_0_255"/>
+				
+			</detailobject>
+			<COMMAND>
+				<cmd id="0" name="FADE_IN">
+					{
+						"act0": {
+							"single_1" : 
+							{	
+									"POSITION":"0_-100",
+									"DESIGN":"768_1024",
+									"STYLE": 2,
+									"TIME":0.2
+							},
+							"single_2":{
+								"OPACITY":0,
+								"TIME":0.2
+							}
+						},
+						"act1": {
+							"single_1" : {	
+									"POSITION":"0_100",
+									"DESIGN":"768_1024",
+									"STYLE": 2,
+									"TIME":0.2
+							},
+							"single_2":{
+								"OPACITY":255,
+								"TIME":0.2
+							}
+						}		
+					}					
+					</cmd>
+				<cmd id="1" name="FADE_OUT">
+					{
+						"act0": {
+							"single_1" : 
+							{	
+									"POSITION":"0_-100",
+									"DESIGN":"768_1024",
+									"STYLE": 2,
+									"TIME":0.2
+							},
+							"single_2":{
+								"OPACITY":0,
+								"TIME":0.2
+							}
+						}		
+					}					
+				</cmd>
+				<cmd id="2" name="RESET">
+					{
+						"act0": {
+							"squence" : 
+							[
+								{
+									"SIZE":"116_116",
+									"DESIGN":"768_1024",
+									"STICK": 0,
+									"TIME":0.1
+								},
+								{
+									"SIZE":"20_20",
+									"DESIGN":"768_1024",
+									"STICK": 0,
+									"TIME":0.1
+								},
+								{
+									"SIZE":"96_96",
+									"DESIGN":"768_1024",
+									"STICK": 0,
+									"TIME":0.2
+								}
+							]
+						}		
+					}					
+				</cmd>
+				<cmd id="3" name="HINT_HL">
+					{
+						"act0": {
+							"squence" : 
+							[
+								{
+									"SIZE":"76_76",
+									"DESIGN":"768_1024",
+									"STICK": 0,
+									"TIME":0.1
+								},
+								{
+									"SIZE":"96_96",
+									"DESIGN":"768_1024",
+									"STICK": 0,
+									"TIME":0.2
+								}
+							]
+						}		
+					}					
+				</cmd>
+			</COMMAND>
+		</detailobject>
+		<detailobject  id="12" name = "hint_obj">
+				<Main 	type_object ="0" stick_screen="0" visible = "0"/>
+				<Source 	name ="hand_tut_ico_1"/>
+				<Pos  		origin= "0_0" />
+				<Size 		origin="92_102" 	/>		
+		</detailobject>
+		<detailobject  id="13" name = "link_obj_hl">
+			<Main 	type_object ="0" stick_screen="0" visible="1"/>
+			<Source 	name ="hl_link"/>
+			<Size 		origin="57_41"/>
+			<Opacity 	origin ="255" />
+		</detailobject>
+		<detailobject  id="14" name = "hint_mini_node">
+			<Main 	type_object ="0" stick_screen="0" visible="0"/>
+			<Source 	name ="hint_circle_ico"/>
+			<Size 		origin="36_36"/>
+			<Pos  		origin= "0_0" />
+		</detailobject>
+		<detailobject  id="21" name = "text_fly">
+			<Main 	type_object ="3" stick_screen="0" visible="1" />
+			<Text 	name="text" IdxFont="2" size="30" border_w="2" border_color="255_0_255_255"/>
+			<Size 	origin ="20_20" />
+			<Process	origin ="0"/>
+		</detailobject>
+	</Object_ipad>
+	<!-- this is the overwrite param, each project will use another param-->
+	<ActionPhase >
+		
+		<detail_object_control  designSize="480_800"
+			first_place="25_348" 
+			distance_object="42" 
+		/>
+		
+		<detail_object_control_ipad designSize="768_1024"
+			first_place="129_490" 
+			distance_object="42" 
+		/>
+		
+		<detail_object_control_ip_retina designSize="640_960"
+			first_place="25_348" 
+			distance_object="40" 
+		/>
+		
+		<detail_object_control_5x  designSize="480_800"
+			first_place="28_358" 
+			distance_object="12" 
+		/>
+		
+		<detail_object_control_ipad_5x designSize="768_1024"
+			first_place="84_429" 
+			distance_object="30" 
+		/>
+		
+		<detail_object_control_ip_retina_5x designSize="640_960"
+			first_place="28_358" 
+			distance_object="12" 
+		/>
+		
+		<color_hl>
+			<color value="110_240_10_255"/>
+			<color value="250_180_124_255"/>
+			<color value="129_191_250_255"/>
+			<color value="240_135_184_255"/>
+			<color value="180_135_238_255"/>
+			<color value="68_2_178_255"/>
+			<color value="205_57_218_255"/>
+			<color value="8_83_118_255"/>
+			<color value="214_15_0_255"/>
+			<color value="223_226_8_255"/>
+			<color value="142_7_176_255"/>
+		</color_hl>
+		
+		<time_param delay_each_level = "0.25f"/>
+		
+		<step_lock
+			step 			="2_5" 
+			number_max 	="4"
+			chance_appear 	="15"
+			chance_have_lock_each_object = "10"
+			step_add_each_chance = "3"
+			font_idx = "1"
+			font_size ="18"
+			font_color = "190_0_0_255"
+		/>	
+	</ActionPhase>
+</GAME>

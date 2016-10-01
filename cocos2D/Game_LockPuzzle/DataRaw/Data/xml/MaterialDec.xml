@@ -1,0 +1,36 @@
+<GAME>
+	<Material>
+		<material_dec id="0" name="effect" Path="Material/effect_2d.material" namespacePath="default">
+			<technique id="0" name="blur">
+				<pass name="0"/>
+			</technique>
+			<technique id="1" name="outline">
+				<pass name="0"/>
+			</technique>
+			<technique id="2" name="edge_detect">
+				<pass name="0"/>
+			</technique>
+			<technique id="3" name="bloom">
+				<pass name="0"/>
+			</technique>
+		</material_dec>
+	</Material>
+	<Shader>
+		<shader id="0" name ="blur">
+			<HLSL vert_shader="Material/effect_Normal.vsh" pixel_shader="Material/shader_Blur.fsh"/>
+			<GLSL vert_shader="Material/effect_Normal.vsh" pixel_shader="Material/shader_Blur.fsh"/>
+		</shader>
+		<shader id="1" name ="outline">
+			<HLSL vert_shader="Material/effect_Normal.vsh" pixel_shader="Material/shader_Outline.fsh"/>
+			<GLSL vert_shader="Material/effect_Normal.vsh" pixel_shader="Material/shader_Outline.fsh"/>
+		</shader>
+		<shader id="2" name ="edge_detect">
+			<HLSL vert_shader="Material/effect_Normal.vsh" pixel_shader="Material/shader_EdgeDetection.fsh"/>
+			<GLSL vert_shader="Material/effect_Normal.vsh" pixel_shader="Material/shader_EdgeDetection.fsh"/>
+		</shader>
+		<shader id="3" name ="bloom">
+			<HLSL vert_shader="Material/effect_Normal.vsh" pixel_shader="Material/shader_Bloom.fsh"/>
+			<GLSL vert_shader="Material/effect_Normal.vsh" pixel_shader="Material/shader_Bloom.fsh"/>
+		</shader>
+	</Shader>
+</GAME>

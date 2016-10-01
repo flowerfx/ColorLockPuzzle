@@ -1,0 +1,125 @@
+<GAME>
+	<!--	
+		<BackGround designSize="480_800"> // design size 
+		<BGStyle name=""> //name to get in code c++
+			<layer id="0" name ="" loop="-1"> //name to get in code c++
+				<config chance_process="" delay_time="" distance="0_0" delta_distance"0_0_0_0"> //chane_process is global from 0 - 100, 
+																									process_time is global for all action if it not define, 
+																									distance is distance each object
+																									delta_distance 0x_0y_0z_0t 0x_0y is range of x, 0z_0y is the range of y 
+					<Random>
+						<Pos 		random="0" value="0_0_480_800" time ="5_10" delay="0_0" value_move_random="0_0_480_800"/>
+						<Size 		random="0" value="0_500"/> //100 mean 100/100 = 1 , scale 1 , 500 mean 500/100 = 5 scale to 5 ...
+						<Rotate 	random="0" value="0_360"/>
+						<Opacity 	random="0" value="0_255"/>
+						<Color 		random="0" value="0_255_0_255_0_255"/>
+						<Process 	random="0" value="50_100" time="5_10"/>
+					<random/>
+					<number		value =""/>			
+					<Pos		origin =""	vector = ""	time =""  delay="" delay_first="0" type="0" threadHoldRemove="0_1000" rotate_invoke="-1"/> //origin is the first place of object , almost is out of screen, 
+																							 vector is the vector move is type = 0 (move_by) or pos to come if type=1 (move_to)
+																							time is time to process action
+																							delay is delay time each process 
+																							type = 0 is default(move_by) 1 is move_to
+																							Pos does not have IsFade
+																							rotate_invoke is the rotate of object with vector move, -1 mean not rotate, 0-360 is the rotate
+					<Size 		origin =""  scale  = "" time ="" loop ="" delay="" delay_first="0" type="0" IsFade="0" />  //IsFade : the object will process action when appear or disappear
+					<Rotate		origin =""	angle  = "" time ="" loop ="" delay="" delay_first="0" type="0" 			/>
+					<Opacity 	origin =""  first  = ""	time ="" loop ="" delay="" delay_first="0" type="0" IsFade="0" />
+					<Color		origin =""  target = "" time ="" loop ="" delay="" delay_first="0" type="0" 			/>
+					<Process	origin =""  time ="" loop ="" delay="" delay_first="0" type="0" 			/>
+				</config>
+				<object_contain IsRandom ="1">
+					<object id="0" name="">
+						<source 	name=""/>
+						<Animature 	name ="" SpeedScale ="" playByIndex="" >
+							<pathTexture 	path=""	/>
+							<pathPlist 		path=""	/>
+							<pathJson 		path=""	/>
+						</Animature>
+						<Animate 	time_delay="" loop ="-1">
+							<sprite source =""/>
+							<sprite source =""/>
+							<sprite source =""/>
+							<sprite source =""/>
+							<sprite source =""/>
+							<sprite source =""/>
+						</Animate>
+						<Size 		value =""/> //overwrite value global
+						<Rotate		value =""/>
+						<Opacity 	value =""/>
+						<Color		value =""/>
+					</object>
+					..
+				</object_contain>
+			</layer>
+		</BGStyle>
+	</BackGround>
+		-->
+	<BackGround designSize="480_800">
+		<BGStyle name="background_effect">
+			<layer id="2" name ="light_beam">
+				<config distance="0_0" delta_distance="0_0_1_1">
+					<Random>
+						<Pos 		random="1" value="-200_-800_200_1600" time ="5_20"/>
+						<Size 		random="1" value="80_150"/> 
+						<Rotate 	random="0" value="0_0"/>
+						<Opacity 	random="1" value="125_255"/>
+						<Color 		random="1" value="0_255_0_255_0_255"/>
+					</Random>
+					<number		value="50_60"/>
+					<Pos		origin ="50_50"	vector = "480_650"	loop ="1" time ="5.0" delay_first="0" threadHoldRemove="480_1550" type="0" rotate_invoke="0"/>
+					<Opacity 	origin ="255"  first  = "255"	loop ="1" time ="3.5" IsFade="1"/>
+					<Size 					   scale  = "-50.0" time ="5.0" loop ="1" IsFade="0"/>
+				</config>
+				<object_contain IsRandom="1">
+					
+					<object id="0" name="light_1">
+						<source 	name="dot_light_1"/>					
+						<Size 		value ="60_60"/>
+					</object>			
+					<object id="1" name="light_3">
+						<source 	name="line_light"/>					
+						<Size 		value ="157_19"/>
+					</object>
+				</object_contain>
+			</layer>
+			
+			<layer id="1" name ="light_halo">
+				<config distance="0_0" delta_distance="0_0_1_1">
+					<Random>
+						<Pos 		random="1" value="0_-300_480_200" time ="5_20"/>
+						<Size 		random="1" value="80_150"/> 
+						<Opacity 	random="1" value="255_255"/>
+						<Color 		random="1" value="0_255_0_255_0_255"/>
+					</Random>
+					<number		value="10_15"/>
+					<Pos		origin ="50_50"	vector = "0_1000"	loop ="1" time ="10.0" threadHoldRemove="0_1000" type="0" rotate_invoke="-1"/>
+					<Opacity 	origin ="255"  first  = "255"	loop ="1" time ="2.5" IsFade="1"/>
+				</config>
+				<object_contain IsRandom="1">			
+					<object id="1" name="light_2">
+						<source 	name="dot_light"/>					
+						<Size 		 value ="60_60"/>
+						<StickScreen value="0"/>
+					</object>	
+				</object_contain>
+			</layer>
+			
+			<layer id="0" name ="background">
+				<config distance="0_0" delta_distance="0_0_0_0">
+					<number		value="1_1"/>
+					<Pos		origin ="240_400"/>
+				</config>
+				<object_contain>
+					<object id="0" name="panel">
+						<source 	name="background_img"/>					
+						<Size 		value ="480_800"/>
+						<StickScreen value="1"/>
+					</object>
+				</object_contain>
+			</layer>
+			
+		</BGStyle>	
+	</BackGround>
+</GAME>

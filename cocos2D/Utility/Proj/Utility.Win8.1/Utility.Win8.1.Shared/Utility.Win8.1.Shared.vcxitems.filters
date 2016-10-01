@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\SoundManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\ParicleManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\ObjectTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\LoadDataXML.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\InputManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\BasicObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\DisplayView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Effect.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Factory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\FileManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Background\BGObject.h">
+      <Filter>Background</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Background\ObjectBGEntity.h">
+      <Filter>Background</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\BoostMgr\BoostManager.h">
+      <Filter>BoostMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\FXFlatform\XFlatform.h">
+      <Filter>FXFlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\IAP\Win8.1\WinRT_IAP.h">
+      <Filter>IAP\Win8.1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\IAP\IAPManager.h">
+      <Filter>IAP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Social\Downloader\DownloadHandler.h">
+      <Filter>Social\Downloader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\Social\SocialManager.h">
+      <Filter>Social</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\ButtonEntity.h">
+      <Filter>UI\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\MenuEntity.h">
+      <Filter>UI\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\MenuResource.h">
+      <Filter>UI\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\PanelEntity.h">
+      <Filter>UI\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\TextEntity.h">
+      <Filter>UI\Entity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\SoundManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\ParticleManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\ObjectTexture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\LoadDataXML.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\InputManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\BasicObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\DisplayView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Effect.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\FileManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Background\BGObject.cpp">
+      <Filter>Background</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Background\ObjectBGEntity.cpp">
+      <Filter>Background</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\BoostMgr\BoostManager.cpp">
+      <Filter>BoostMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\FXFlatform\XFlatform.cpp">
+      <Filter>FXFlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\IAP\Win8.1\WinRT_IAP.cpp">
+      <Filter>IAP\Win8.1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\IAP\IAPManager.cpp">
+      <Filter>IAP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Social\Downloader\DownloadHandler.cpp">
+      <Filter>Social\Downloader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\Social\SocialManager.cpp">
+      <Filter>Social</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\ButtonEntity.cpp">
+      <Filter>UI\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\MenuEntity.cpp">
+      <Filter>UI\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\MenuResource.cpp">
+      <Filter>UI\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\PanelEntity.cpp">
+      <Filter>UI\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Code\UI\Entity\TextEntity.cpp">
+      <Filter>UI\Entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Background">
+      <UniqueIdentifier>{df791db2-244f-4de9-a07b-6327bcc0dc11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BoostMgr">
+      <UniqueIdentifier>{04350c8d-3d16-41df-8663-c80e82b00810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FXFlatform">
+      <UniqueIdentifier>{d01d664b-ffe0-4230-957f-16a9f8a69932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IAP">
+      <UniqueIdentifier>{f1980f10-1152-4f93-8984-1af1d5bd89b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IAP\Win8.1">
+      <UniqueIdentifier>{ba548781-718a-4978-a888-dccd7aee419d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Social">
+      <UniqueIdentifier>{ab2842c3-2cea-4bbd-bc94-fca9916ff356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Social\Downloader">
+      <UniqueIdentifier>{7ea696ab-194c-43d4-808f-414d6756d119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{77041bb4-779b-4181-92e4-9d2d24a0b496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Entity">
+      <UniqueIdentifier>{d8633a17-d5f3-4456-8451-8a43c4d0932d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

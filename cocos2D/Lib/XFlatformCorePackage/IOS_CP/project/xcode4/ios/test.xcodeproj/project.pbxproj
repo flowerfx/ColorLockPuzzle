@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02514F45CC12E2EF6E1C4585 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8C127CA3BDD9FC0D5FF94AE3 /* ViewController.mm */; };
+		127CDBA344D4344DBB58F1E3 /* NativeDispatcher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 029CD821C189FC8BEDC0C661 /* NativeDispatcher.mm */; };
+		43FF13EF45A49D994057CA2F /* SimpleApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB5C2D5F571197E217EA6D /* SimpleApp.cpp */; };
+		470243F79261CC218D1D0A37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BE277583CE4B5F2742C5B5 /* main.m */; };
+		5093BE9F2322EF4954A6D4DF /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E07C907D45628CE73D777EBD /* test.cpp */; };
+		67E264FF69110129DD41AB3F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35D697FD4AF54FE7814FB63D /* AppDelegate.mm */; };
+		97FC1520698EC7CA953C6B60 /* libiOSCorePackage_d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49958E288755C992AB79DC68 /* libiOSCorePackage_d.a */; };
+		AA102F659C24D08FAE2895A5 /* IOSSimpleApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F768103E3A31DEDF2D4BF43 /* IOSSimpleApp.cpp */; };
+		F5EF3FC1AEE4F4EBB08C2601 /* MainThreadDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE12389F4B1F6989F8A4F6DF /* MainThreadDispatcher.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93502DBCB7C573A619C60BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EBFF90E52A900F8F40B174E /* iOSCorePackage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 59EF8CC3632800ED69C5D303;
+			remoteInfo = iOSCorePackage;
+		};
+		AAC727F5CF3C6DDF313D0635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EBFF90E52A900F8F40B174E /* iOSCorePackage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC0FB49464692337CC77989;
+			remoteInfo = iOSCorePackage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029CD821C189FC8BEDC0C661 /* NativeDispatcher.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objc; name = NativeDispatcher.mm; path = ../../../tests/SimpleApp/NativeDispatcher.mm; sourceTree = "<group>"; };
+		12D3AC85765B866F8BBE0AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
+		26068E9F9A332B89A964CCDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../tests/SimpleApp/ViewController.h; sourceTree = "<group>"; };
+		35D697FD4AF54FE7814FB63D /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objc; name = AppDelegate.mm; path = ../../../tests/SimpleApp/AppDelegate.mm; sourceTree = "<group>"; };
+		4EBFF90E52A900F8F40B174E /* libiOSCorePackage_d.a */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "iOSCorePackage.xcodeproj"; path = iOSCorePackage.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6DCBBB1745614B81C55B2957 /* SimpleApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SimpleApp.h; path = ../../../tests/SimpleApp/SimpleApp.h; sourceTree = "<group>"; };
+		6F768103E3A31DEDF2D4BF43 /* IOSSimpleApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSSimpleApp.cpp; path = ../../../tests/SimpleApp/IOSSimpleApp.cpp; sourceTree = "<group>"; };
+		744FB1D943AB6743C66C4019 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../tests/SimpleApp/AppDelegate.h; sourceTree = "<group>"; };
+		8C127CA3BDD9FC0D5FF94AE3 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objc; name = ViewController.mm; path = ../../../tests/SimpleApp/ViewController.mm; sourceTree = "<group>"; };
+		8FFB5C2D5F571197E217EA6D /* SimpleApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SimpleApp.cpp; path = ../../../tests/SimpleApp/SimpleApp.cpp; sourceTree = "<group>"; };
+		93BE277583CE4B5F2742C5B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../tests/SimpleApp/main.m; sourceTree = "<group>"; };
+		C9B157FD8B5659E73284B63D /* NativeDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NativeDispatcher.h; path = ../../../tests/SimpleApp/NativeDispatcher.h; sourceTree = "<group>"; };
+		E07C907D45628CE73D777EBD /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = ../../../tests/test.cpp; sourceTree = "<group>"; };
+		E942D732F469F3DCF0716D72 /* test */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = test; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE12389F4B1F6989F8A4F6DF /* MainThreadDispatcher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainThreadDispatcher.cpp; path = ../../../tests/SimpleApp/MainThreadDispatcher.cpp; sourceTree = "<group>"; };
+		FE2897A98AFDE3935A9635E9 /* MainThreadDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainThreadDispatcher.h; path = ../../../tests/SimpleApp/MainThreadDispatcher.h; sourceTree = "<group>"; };
+		FE778D8D1396457749F0ABCD /* IOSSimpleApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOSSimpleApp.h; path = ../../../tests/SimpleApp/IOSSimpleApp.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		821D57B300AF6A5D4039ADF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FC1520698EC7CA953C6B60 /* libiOSCorePackage_d.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B4143D1619802BBB2B0C211 /* SimpleApp */ = {
+			isa = PBXGroup;
+			children = (
+				744FB1D943AB6743C66C4019 /* AppDelegate.h */,
+				35D697FD4AF54FE7814FB63D /* AppDelegate.mm */,
+				6F768103E3A31DEDF2D4BF43 /* IOSSimpleApp.cpp */,
+				FE778D8D1396457749F0ABCD /* IOSSimpleApp.h */,
+				FE12389F4B1F6989F8A4F6DF /* MainThreadDispatcher.cpp */,
+				FE2897A98AFDE3935A9635E9 /* MainThreadDispatcher.h */,
+				C9B157FD8B5659E73284B63D /* NativeDispatcher.h */,
+				029CD821C189FC8BEDC0C661 /* NativeDispatcher.mm */,
+				8FFB5C2D5F571197E217EA6D /* SimpleApp.cpp */,
+				6DCBBB1745614B81C55B2957 /* SimpleApp.h */,
+				26068E9F9A332B89A964CCDF /* ViewController.h */,
+				8C127CA3BDD9FC0D5FF94AE3 /* ViewController.mm */,
+				93BE277583CE4B5F2742C5B5 /* main.m */,
+			);
+			name = SimpleApp;
+			sourceTree = "<group>";
+		};
+		544595F165C076DB88065431 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				12D3AC85765B866F8BBE0AC5 /* Info.plist */,
+				B286E73F69D774A9BBFA757F /* tests */,
+				581EEAC54FB7EDAF2070E905 /* Projects */,
+				EA8E290FE2272BF9B2E0274F /* Products */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		5675FEBC29052F665A8914FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49958E288755C992AB79DC68 /* libiOSCorePackage_d.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		581EEAC54FB7EDAF2070E905 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				4EBFF90E52A900F8F40B174E /* iOSCorePackage.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		B286E73F69D774A9BBFA757F /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				2B4143D1619802BBB2B0C211 /* SimpleApp */,
+				E07C907D45628CE73D777EBD /* test.cpp */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+		EA8E290FE2272BF9B2E0274F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E942D732F469F3DCF0716D72 /* test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		238D33D8CE8E634298220218 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E3FB372DCD1C61C1C5C09B2 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				03EE3C5382804EFDC20A9293 /* Resources */,
+				9DA3C40A1C35D6B45BC01A4A /* Sources */,
+				821D57B300AF6A5D4039ADF3 /* Frameworks */,
+				1FD8AB7EF766B5E8A7C059BE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6DAC965C969FA0FFAEDDFA5 /* PBXTargetDependency */,
+			);
+			name = test;
+			productInstallPath = "$(HOME)/Applications";
+			productName = test;
+			productReference = E942D732F469F3DCF0716D72 /* test */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					238D33D8CE8E634298220218 = {
+					};
+				};
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "test" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 544595F165C076DB88065431 /* test */;
+			productRefGroup = F0CB3ABCFA03AEE600A180FC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5675FEBC29052F665A8914FC /* Products */;
+					ProjectRef = 4EBFF90E52A900F8F40B174E /* iOSCorePackage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				238D33D8CE8E634298220218 /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		49958E288755C992AB79DC68 /* libiOSCorePackage_d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libiOSCorePackage_d.a;
+			remoteRef = 93502DBCB7C573A619C60BFC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03EE3C5382804EFDC20A9293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA3C40A1C35D6B45BC01A4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67E264FF69110129DD41AB3F /* AppDelegate.mm in Sources */,
+				AA102F659C24D08FAE2895A5 /* IOSSimpleApp.cpp in Sources */,
+				F5EF3FC1AEE4F4EBB08C2601 /* MainThreadDispatcher.cpp in Sources */,
+				127CDBA344D4344DBB58F1E3 /* NativeDispatcher.mm in Sources */,
+				43FF13EF45A49D994057CA2F /* SimpleApp.cpp in Sources */,
+				02514F45CC12E2EF6E1C4585 /* ViewController.mm in Sources */,
+				470243F79261CC218D1D0A37 /* main.m in Sources */,
+				5093BE9F2322EF4954A6D4DF /* test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6DAC965C969FA0FFAEDDFA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSCorePackage;
+			targetProxy = AAC727F5CF3C6DDF313D0635 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D80138988E178B3D40AF9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Valeri Vuchov (WDTMDP2J2J)";
+				COMMON_HEADER_SEARCH_PATHS = ../../../include;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					_SCL_SECURE_NO_WARNINGS,
+					_CRT_SECURE_NO_WARNINGS,
+					_WINSOCK_DEPRECATED_NO_WARNINGS,
+					OS_IPHONE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "$(COMMON_HEADER_SEARCH_PATHS)";
+				INSTALL_PATH = "\"$(HOME)/Applications\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OBJROOT = obj/Debug/test;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-x",
+					"objective-c++",
+					"-Wno-error",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					UIKit,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					CoreTelephony,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					Security,
+					"-framework",
+					AdSupport,
+					"-framework",
+					GameKit,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Accounts,
+					"-framework",
+					Social,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					MessageUI,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AddressBook,
+					"-framework",
+					MediaPlayer,
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../build/xcode4/ios;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		2584D458C303A8C25856C298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Valeri Vuchov (WDTMDP2J2J)";
+				COMMON_HEADER_SEARCH_PATHS = ../../../include;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					"_SECURE_SCL=0",
+					"_SECURE_SCL_THROWS=0",
+					_SCL_SECURE_NO_WARNINGS,
+					_CRT_SECURE_NO_WARNINGS,
+					_WINSOCK_DEPRECATED_NO_WARNINGS,
+					OS_IPHONE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "$(COMMON_HEADER_SEARCH_PATHS)";
+				INFOPLIST_FILE = ../../Info.plist;
+				INSTALL_PATH = "\"$(HOME)/Applications\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OBJROOT = obj/Release/test;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-x",
+					"objective-c++",
+					"-Wno-error",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					UIKit,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					CoreTelephony,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					Security,
+					"-framework",
+					AdSupport,
+					"-framework",
+					GameKit,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Accounts,
+					"-framework",
+					Social,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					MessageUI,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AddressBook,
+					"-framework",
+					MediaPlayer,
+				);
+				PRODUCT_NAME = test;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../build/xcode4/ios;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+		A5E8C35E15F3754892EA219E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Valeri Vuchov (WDTMDP2J2J)";
+				COMMON_HEADER_SEARCH_PATHS = ../../../include;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					_SCL_SECURE_NO_WARNINGS,
+					_CRT_SECURE_NO_WARNINGS,
+					_WINSOCK_DEPRECATED_NO_WARNINGS,
+					OS_IPHONE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "$(COMMON_HEADER_SEARCH_PATHS)";
+				INFOPLIST_FILE = ../../Info.plist;
+				INSTALL_PATH = "\"$(HOME)/Applications\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OBJROOT = obj/Debug/test;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-x",
+					"objective-c++",
+					"-Wno-error",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					UIKit,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					CoreTelephony,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					Security,
+					"-framework",
+					AdSupport,
+					"-framework",
+					GameKit,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Accounts,
+					"-framework",
+					Social,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					MessageUI,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AddressBook,
+					"-framework",
+					MediaPlayer,
+				);
+				PRODUCT_NAME = test_d;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../build/xcode4/ios;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		EC36A9C3B586016D71142003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Valeri Vuchov (WDTMDP2J2J)";
+				COMMON_HEADER_SEARCH_PATHS = ../../../include;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					"_SECURE_SCL=0",
+					"_SECURE_SCL_THROWS=0",
+					_SCL_SECURE_NO_WARNINGS,
+					_CRT_SECURE_NO_WARNINGS,
+					_WINSOCK_DEPRECATED_NO_WARNINGS,
+					OS_IPHONE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "$(COMMON_HEADER_SEARCH_PATHS)";
+				INSTALL_PATH = "\"$(HOME)/Applications\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OBJROOT = obj/Release/test;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-std=c++11",
+					"-stdlib=libc++",
+					"-x",
+					"objective-c++",
+					"-Wno-error",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					UIKit,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					CoreTelephony,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					Security,
+					"-framework",
+					AdSupport,
+					"-framework",
+					GameKit,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Accounts,
+					"-framework",
+					Social,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					MessageUI,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AddressBook,
+					"-framework",
+					MediaPlayer,
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../build/xcode4/ios;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D80138988E178B3D40AF9C9 /* Debug */,
+				EC36A9C3B586016D71142003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E3FB372DCD1C61C1C5C09B2 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E8C35E15F3754892EA219E /* Debug */,
+				2584D458C303A8C25856C298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AnimationState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AnimationStateData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Atlas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AtlasAttachmentLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Attachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AttachmentLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Bone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\BoneData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\BoundingBoxAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\EventData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\IkConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\IkConstraintData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\MeshAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\PolygonBatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\RegionAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Skeleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonBounds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonJson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Skin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkinnedMeshAttachment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Slot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SlotData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\spine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\spine-cocos2dx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Animation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AnimationState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AnimationStateData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Atlas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AtlasAttachmentLoader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Attachment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\AttachmentLoader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Bone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\BoneData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\BoundingBoxAttachment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Event.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\EventData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\extension.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\IkConstraint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\IkConstraintData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Json.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\MeshAttachment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\RegionAttachment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Skeleton.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonBounds.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonJson.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Skin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkinnedMeshAttachment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\Slot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SlotData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\PolygonBatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonAnimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\SkeletonRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cocos2d-x-lib\cocos\editor-support\spine\spine-cocos2dx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

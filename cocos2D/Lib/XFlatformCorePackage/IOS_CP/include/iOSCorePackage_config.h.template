@@ -1,0 +1,18 @@
+/**
+* This is only a template. The setup.bat script will copy it to iOSCorePackage_config\ folder.
+* It will be renamed in iOSCorePackage_config.h .
+*/
+#pragma once
+#ifndef iOSCorePackage_config_h
+#define iOSCorePackage_config_h
+
+/** Enable the Service that can retrieve the geo location. Enabled By default.*/
+#define USE_GEOLOCATION
+
+/** Enable the Service that can retrieve the information about wifi. Ex: SSID . Enabled By default.*/
+#define USE_WIFIINFO
+
+//#define ACTIVATE_MAC_TRANSITION  //disabled by default
+
+#endif //iOSCorePackage_config_h
+

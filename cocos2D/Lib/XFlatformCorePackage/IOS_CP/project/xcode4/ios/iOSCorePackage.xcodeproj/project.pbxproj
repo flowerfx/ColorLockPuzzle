@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EC84438ED1576A2A7D8F278 /* TopLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A8AB67EFE9208E19330CEE2F /* TopLayer.mm */; };
+		1F2D137B32686665985111BB /* XKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BE10F28FC4879C9DD0E732 /* XKeychainItemWrapper.m */; };
+		5B7A656CAA9450D6320CB3AC /* NativeGeoLocator.mm in Sources */ = {isa = PBXBuildFile; fileRef = A53B89E39B80C90D287AB023 /* NativeGeoLocator.mm */; };
+		61F92D12984FEBFCE968AB52 /* FileSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 237EC029DE5122D3B92D1669 /* FileSystem.cpp */; };
+		AB871E37E1DDDD2132F69C77 /* DeviceInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0AA33EEAB7C969886588A2E /* DeviceInfo.cpp */; };
+		AC7B6E6FD37D8FD9CDC37CAF /* Reachability.mm in Sources */ = {isa = PBXBuildFile; fileRef = 76992B862F8EE0B0313611C6 /* Reachability.mm */; };
+		BDB8B780EF8036EA919F85C0 /* NativeGeoLocatorAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 814AE6B717ED39E1B08E8CF7 /* NativeGeoLocatorAdapter.cpp */; };
+		D40A8B14A11EE27EC6485954 /* WIFIInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11FF56EB378F82156239FD2B /* WIFIInfo.cpp */; };
+		DCC1B1D44F93C3FEFB5EB814 /* PlatformBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB7CB2B48FA39159016A96B /* PlatformBase.cpp */; };
+		E1AE89D0180548BA691E0810 /* GeoLocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B88F28A773618B514E3D7EE7 /* GeoLocator.cpp */; };
+		FB6E717E46CDF9A8418937BE /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4B3354FB4D71FF3295175 /* Platform.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		026DAABF6D251769532E40FF /* NativeGeoLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NativeGeoLocator.h; path = ../../../src/GeoLocator/NativeGeoLocator.h; sourceTree = "<group>"; };
+		10B459BD8B5A09E7AE581FFD /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeviceInfo.h; path = ../../../include/Platform/DeviceInfo.h; sourceTree = "<group>"; };
+		11013DB2E896CE1C6890ABF2 /* TopLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TopLayer.h; path = ../../../include/IOSNative/TopLayer.h; sourceTree = "<group>"; };
+		11FF56EB378F82156239FD2B /* WIFIInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WIFIInfo.cpp; path = ../../../src/WIFIInfo/WIFIInfo.cpp; sourceTree = "<group>"; };
+		1EB9FE9DD7AFB3C7D956E4DD /* release-project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "release-project.xcconfig"; path = "xcconfigs_iOSCorePackage/release-project.xcconfig"; sourceTree = "<group>"; };
+		237EC029DE5122D3B92D1669 /* FileSystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = FileSystem.cpp; path = ../../../src/FileSystem/FileSystem.cpp; sourceTree = "<group>"; };
+		2D4E147DE8207727C2FC6ABD /* release-target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "release-target.xcconfig"; path = "xcconfigs_iOSCorePackage/release-target.xcconfig"; sourceTree = "<group>"; };
+		52D3D3B153311D1BEEC4E1F1 /* PlatformBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlatformBase.h; path = ../../../include/PlatformBaseInterface/PlatformBase.h; sourceTree = "<group>"; };
+		54EA92AFCF9042D9F28E58EF /* FileSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileSystem.h; path = ../../../include/Platform/FileSystem.h; sourceTree = "<group>"; };
+		564C6E69D0F21E93F3F034A9 /* debug-project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "debug-project.xcconfig"; path = "xcconfigs_iOSCorePackage/debug-project.xcconfig"; sourceTree = "<group>"; };
+		59EF8CC3632800ED69C5D303 /* iOSCorePackage */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = iOSCorePackage; path = libiOSCorePackage_d.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA4B3354FB4D71FF3295175 /* Platform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Platform.cpp; path = ../../../src/Platform.cpp; sourceTree = "<group>"; };
+		66F36C4155A6BA6BB3DDF281 /* NativeGeoLocatorAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NativeGeoLocatorAdapter.h; path = ../../../src/GeoLocator/NativeGeoLocatorAdapter.h; sourceTree = "<group>"; };
+		674A9E0931923BB3B0C7D449 /* debug-target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "debug-target.xcconfig"; path = "xcconfigs_iOSCorePackage/debug-target.xcconfig"; sourceTree = "<group>"; };
+		76992B862F8EE0B0313611C6 /* Reachability.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objc; name = Reachability.mm; path = ../../../src/DeviceInfo/Reachability.mm; sourceTree = "<group>"; };
+		786B1243F310C26D160ED883 /* GeoLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GeoLocator.h; path = ../../../include/Platform/GeoLocator.h; sourceTree = "<group>"; };
+		814AE6B717ED39E1B08E8CF7 /* NativeGeoLocatorAdapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = NativeGeoLocatorAdapter.cpp; path = ../../../src/GeoLocator/NativeGeoLocatorAdapter.cpp; sourceTree = "<group>"; };
+		83BE10F28FC4879C9DD0E732 /* XKeychainItemWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XKeychainItemWrapper.m; path = ../../../src/DeviceInfo/XKeychainItemWrapper.m; sourceTree = "<group>"; };
+		87A8906FAD38BB99D7E336AF /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = ../../../include/Platform/Platform.h; sourceTree = "<group>"; };
+		95E06E88A1E6E532AFF344C8 /* XKeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XKeychainItemWrapper.h; path = ../../../src/DeviceInfo/XKeychainItemWrapper.h; sourceTree = "<group>"; };
+		9CC4904C1D742636030C6E8C /* iOSCorePackage_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iOSCorePackage_config.h; path = ../../../../iOSCorePackage_config/iOSCorePackage_config.h; sourceTree = "<group>"; };
+		A53B89E39B80C90D287AB023 /* NativeGeoLocator.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objc; name = NativeGeoLocator.mm; path = ../../../src/GeoLocator/NativeGeoLocator.mm; sourceTree = "<group>"; };
+		A8AB67EFE9208E19330CEE2F /* TopLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objc; name = TopLayer.mm; path = ../../../src/Native/TopLayer.mm; sourceTree = "<group>"; };
+		B88F28A773618B514E3D7EE7 /* GeoLocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GeoLocator.cpp; path = ../../../src/GeoLocator/GeoLocator.cpp; sourceTree = "<group>"; };
+		BF30E5A27A03484C54DF3BE2 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../../../src/DeviceInfo/Reachability.h; sourceTree = "<group>"; };
+		C2292071D9810EDBF0774EB1 /* PlatformBase.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = PlatformBase.hpp; path = ../../../include/PlatformBaseInterface/PlatformBase.hpp; sourceTree = "<group>"; };
+		CBB7CB2B48FA39159016A96B /* PlatformBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PlatformBase.cpp; path = ../../../src/PlatformBase.cpp; sourceTree = "<group>"; };
+		CD3B2F8CE0768276465F2DCC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../../../include/IOSNative/Constants.h; sourceTree = "<group>"; };
+		F0AA33EEAB7C969886588A2E /* DeviceInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DeviceInfo.cpp; path = ../../../src/DeviceInfo/DeviceInfo.cpp; sourceTree = "<group>"; };
+		F2DE67DB186E930543190E1B /* WIFIInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WIFIInfo.h; path = ../../../include/Platform/WIFIInfo.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6811BB337E20ADD53AE41F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		119F45C938A1673332E75409 /* IOSNative */ = {
+			isa = PBXGroup;
+			children = (
+				CD3B2F8CE0768276465F2DCC /* Constants.h */,
+				11013DB2E896CE1C6890ABF2 /* TopLayer.h */,
+			);
+			name = IOSNative;
+			sourceTree = "<group>";
+		};
+		136F486F49C607599ADEC6AF /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				10B459BD8B5A09E7AE581FFD /* DeviceInfo.h */,
+				54EA92AFCF9042D9F28E58EF /* FileSystem.h */,
+				786B1243F310C26D160ED883 /* GeoLocator.h */,
+				87A8906FAD38BB99D7E336AF /* Platform.h */,
+				F2DE67DB186E930543190E1B /* WIFIInfo.h */,
+			);
+			name = Platform;
+			sourceTree = "<group>";
+		};
+		2E18E227646FA111B5886067 /* GeoLocator */ = {
+			isa = PBXGroup;
+			children = (
+				B88F28A773618B514E3D7EE7 /* GeoLocator.cpp */,
+				026DAABF6D251769532E40FF /* NativeGeoLocator.h */,
+				A53B89E39B80C90D287AB023 /* NativeGeoLocator.mm */,
+				814AE6B717ED39E1B08E8CF7 /* NativeGeoLocatorAdapter.cpp */,
+				66F36C4155A6BA6BB3DDF281 /* NativeGeoLocatorAdapter.h */,
+			);
+			name = GeoLocator;
+			sourceTree = "<group>";
+		};
+		314DC7E2482C304C2CB43622 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4AF8CAC1814F89ABD2684901 /* DeviceInfo */,
+				5D13BE53936A7D3DE4833C93 /* FileSystem */,
+				2E18E227646FA111B5886067 /* GeoLocator */,
+				F8C64DD79F29C2C118BB8C17 /* Native */,
+				5FA4B3354FB4D71FF3295175 /* Platform.cpp */,
+				CBB7CB2B48FA39159016A96B /* PlatformBase.cpp */,
+				C44780BF27CF5AA93D31DEFF /* WIFIInfo */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		4982DBEA00D3695452F66A2A /* iOSCorePackage */ = {
+			isa = PBXGroup;
+			children = (
+				8A1DA4DC59795A46DC3A331C /* iOSCorePackage_config */,
+				CCB2CA9AAAFFFD0465C378DA /* include */,
+				314DC7E2482C304C2CB43622 /* src */,
+				68C9F90A1BE7FC34BDFB9F4A /* xcconfigs */,
+				EA8E290FE2272BF9B2E0274F /* Products */,
+			);
+			name = iOSCorePackage;
+			sourceTree = "<group>";
+		};
+		4AF8CAC1814F89ABD2684901 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F0AA33EEAB7C969886588A2E /* DeviceInfo.cpp */,
+				BF30E5A27A03484C54DF3BE2 /* Reachability.h */,
+				76992B862F8EE0B0313611C6 /* Reachability.mm */,
+				95E06E88A1E6E532AFF344C8 /* XKeychainItemWrapper.h */,
+				83BE10F28FC4879C9DD0E732 /* XKeychainItemWrapper.m */,
+			);
+			name = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		57FCD1A789C451112BE39FE7 /* PlatformBaseInterface */ = {
+			isa = PBXGroup;
+			children = (
+				52D3D3B153311D1BEEC4E1F1 /* PlatformBase.h */,
+				C2292071D9810EDBF0774EB1 /* PlatformBase.hpp */,
+			);
+			name = PlatformBaseInterface;
+			sourceTree = "<group>";
+		};
+		5D13BE53936A7D3DE4833C93 /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				237EC029DE5122D3B92D1669 /* FileSystem.cpp */,
+			);
+			name = FileSystem;
+			sourceTree = "<group>";
+		};
+		68C9F90A1BE7FC34BDFB9F4A /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				564C6E69D0F21E93F3F034A9 /* debug-project.xcconfig */,
+				674A9E0931923BB3B0C7D449 /* debug-target.xcconfig */,
+				1EB9FE9DD7AFB3C7D956E4DD /* release-project.xcconfig */,
+				2D4E147DE8207727C2FC6ABD /* release-target.xcconfig */,
+			);
+			name = xcconfigs;
+			sourceTree = "<group>";
+		};
+		8A1DA4DC59795A46DC3A331C /* iOSCorePackage_config */ = {
+			isa = PBXGroup;
+			children = (
+				9CC4904C1D742636030C6E8C /* iOSCorePackage_config.h */,
+			);
+			name = iOSCorePackage_config;
+			sourceTree = "<group>";
+		};
+		C44780BF27CF5AA93D31DEFF /* WIFIInfo */ = {
+			isa = PBXGroup;
+			children = (
+				11FF56EB378F82156239FD2B /* WIFIInfo.cpp */,
+			);
+			name = WIFIInfo;
+			sourceTree = "<group>";
+		};
+		CCB2CA9AAAFFFD0465C378DA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				119F45C938A1673332E75409 /* IOSNative */,
+				136F486F49C607599ADEC6AF /* Platform */,
+				57FCD1A789C451112BE39FE7 /* PlatformBaseInterface */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		EA8E290FE2272BF9B2E0274F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59EF8CC3632800ED69C5D303 /* iOSCorePackage */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C64DD79F29C2C118BB8C17 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				A8AB67EFE9208E19330CEE2F /* TopLayer.mm */,
+			);
+			name = Native;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4DC0FB49464692337CC77989 /* iOSCorePackage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A377721404669C2FD09DB2 /* Build configuration list for PBXNativeTarget "iOSCorePackage" */;
+			buildPhases = (
+				48520053B9B2EF7DD57F2693 /* Resources */,
+				E207880A536877346F34AE4A /* Sources */,
+				C6811BB337E20ADD53AE41F3 /* Frameworks */,
+				98D5EF7E915B8668C7DC6DBE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSCorePackage;
+			productName = iOSCorePackage;
+			productReference = 59EF8CC3632800ED69C5D303 /* iOSCorePackage */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					4DC0FB49464692337CC77989 = {
+					};
+				};
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "iOSCorePackage" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 4982DBEA00D3695452F66A2A /* iOSCorePackage */;
+			productRefGroup = 5675FEBC29052F665A8914FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC0FB49464692337CC77989 /* iOSCorePackage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48520053B9B2EF7DD57F2693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E207880A536877346F34AE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB871E37E1DDDD2132F69C77 /* DeviceInfo.cpp in Sources */,
+				AC7B6E6FD37D8FD9CDC37CAF /* Reachability.mm in Sources */,
+				1F2D137B32686665985111BB /* XKeychainItemWrapper.m in Sources */,
+				61F92D12984FEBFCE968AB52 /* FileSystem.cpp in Sources */,
+				E1AE89D0180548BA691E0810 /* GeoLocator.cpp in Sources */,
+				5B7A656CAA9450D6320CB3AC /* NativeGeoLocator.mm in Sources */,
+				BDB8B780EF8036EA919F85C0 /* NativeGeoLocatorAdapter.cpp in Sources */,
+				0EC84438ED1576A2A7D8F278 /* TopLayer.mm in Sources */,
+				FB6E717E46CDF9A8418937BE /* Platform.cpp in Sources */,
+				DCC1B1D44F93C3FEFB5EB814 /* PlatformBase.cpp in Sources */,
+				D40A8B14A11EE27EC6485954 /* WIFIInfo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09E4D789573E393396F48DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 564C6E69D0F21E93F3F034A9 /* debug-project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		598618586B00F9428D46D698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4E147DE8207727C2FC6ABD /* release-target.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		84DC6DC38E14E1ED94B2B403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB9FE9DD7AFB3C7D956E4DD /* release-project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		A0C9075E2562A5C8E4C5359E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674A9E0931923BB3B0C7D449 /* debug-target.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "iOSCorePackage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E4D789573E393396F48DC9 /* Debug */,
+				84DC6DC38E14E1ED94B2B403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A2A377721404669C2FD09DB2 /* Build configuration list for PBXNativeTarget "iOSCorePackage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C9075E2562A5C8E4C5359E /* Debug */,
+				598618586B00F9428D46D698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

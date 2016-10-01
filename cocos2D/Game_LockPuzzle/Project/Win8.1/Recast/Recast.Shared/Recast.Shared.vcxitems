@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{86f62700-c6f3-4ad4-8dbf-f94a3847a215}</ItemsProjectGuid>
+    <ItemsRootNamespace>Recast</ItemsRootNamespace>
+    <ItemsProjectName>Recast.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DebugUtils\DebugDraw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DebugUtils\DetourDebugDraw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DebugUtils\RecastDebugDraw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DebugUtils\RecastDump.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourCrowd.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourLocalBoundary.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourObstacleAvoidance.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourPathCorridor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourPathQueue.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourProximityGrid.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourTileCache\DetourTileCache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourTileCache\DetourTileCacheBuilder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourAlloc.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourCommon.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourNavMesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourNavMeshBuilder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourNavMeshQuery.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\fastlz\fastlz.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DebugUtils\DebugDraw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DebugUtils\DetourDebugDraw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DebugUtils\RecastDebugDraw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DebugUtils\RecastDump.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourCrowd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourLocalBoundary.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourObstacleAvoidance.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourPathCorridor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourPathQueue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourCrowd\DetourProximityGrid.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourTileCache\DetourTileCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\DetourTileCache\DetourTileCacheBuilder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourAlloc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourAssert.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourCommon.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourNavMesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourNavMeshBuilder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourNavMeshQuery.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\Detour\DetourStatus.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos2d-x-lib\external\recast\fastlz\fastlz.h" />
+  </ItemGroup>
+</Project>

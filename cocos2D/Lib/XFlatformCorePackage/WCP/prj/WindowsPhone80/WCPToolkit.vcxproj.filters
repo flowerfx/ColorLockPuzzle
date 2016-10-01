@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\FileStorage.cpp">
+      <Filter>SecureStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultEntry.cpp">
+      <Filter>SecureStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManager.cpp">
+      <Filter>SecureStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\SecureStorageWrapper.cpp">
+      <Filter>SecureStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedControllers.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedHacking.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedIdentifiers.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedScreenUtils.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedSensors.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedSystemInfo.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedWeb.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedLiveTiles.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedStorage.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedConnectivity.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\Platform\FileSystem.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\Platform\DeviceInfo.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\Platform\GeoLocator.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedUtils.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedPushNotifications.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationImplementation.cpp">
+      <Filter>PushNotifications</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedLocalToastNotifications.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Windows_lib_version.h" />
+    <ClInclude Include="..\..\include\WinShared.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Include\Win8PhoneMacros.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManagerConfig.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\FileStorage.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\ISingleton.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultEntry.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManager.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\SecureStorageWrapper.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Platform\GeoLocator.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Platform\Platform.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PlatformBaseInterface\PlatformBase.h">
+      <Filter>PlatformBaseInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Platform\DeviceInfo.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Platform\FileSystem.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationData.h">
+      <Filter>PushNotifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationImplementation.h">
+      <Filter>PushNotifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WindowsCorePackage.WindowsPhone8.0\Include\Win8PhoneCX.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SecureStorage">
+      <UniqueIdentifier>{c15a0e7c-3018-4879-907c-5ab0cfb5c7fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{abd2f719-9691-45bf-baef-27443c85636e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformBaseInterface">
+      <UniqueIdentifier>{efe12605-4cd8-4f90-8839-59e19ad7b848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{abd2f719-9691-45bf-baef-27443c85636e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformBaseInterface">
+      <UniqueIdentifier>{efe12605-4cd8-4f90-8839-59e19ad7b848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PushNotifications">
+      <UniqueIdentifier>{2e1c5700-0d73-48bd-b7b2-5953739bd3d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Windows_lib_version.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\WinShared.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Platform\DeviceInfo.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Platform\FileSystem.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Platform\GeoLocator.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Platform\Platform.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\PlatformBaseInterface\PlatformBase.h">
+      <Filter>PlatformBaseInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationData.h">
+      <Filter>PushNotifications</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationImplementation.h">
+      <Filter>PushNotifications</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\FileStorage.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\ISingleton.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultEntry.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManager.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManagerConfig.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\SecureStorageWrapper.h">
+      <Filter>SecureStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\WinCryptography.h">
+      <Filter>WinCryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\Include\AntiHack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\Include\FileAgents.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\WinSharedManaged.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Utils\Encryptor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Utils\ZOrdering.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\win8.1\InGameBrowser.h">
+      <Filter>InGameBrowser\src\win8.1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\common\InitStructure.h">
+      <Filter>InGameBrowser\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\WinSharedCX.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedConnectivity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedControllers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedHacking.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedIdentifiers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedLiveTiles.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedPushNotifications.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedScreenUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedSensors.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedStorage.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedSystemInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedWeb.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Platform\DeviceInfo.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Platform\FileSystem.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Platform\GeoLocator.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationImplementation.cpp">
+      <Filter>PushNotifications</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\FileStorage.cpp">
+      <Filter>SecureStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultEntry.cpp">
+      <Filter>SecureStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManager.cpp">
+      <Filter>SecureStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\SecureStorageManager\SecureStorageWrapper.cpp">
+      <Filter>SecureStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\WinCryptography.cpp">
+      <Filter>WinCryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Windows\Sources\AntiHack.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\pch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Utils\Encryptor.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\Utils\ZOrdering.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\win8.1\InGameBrowser.cpp">
+      <Filter>InGameBrowser\src\win8.1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\common\InitStructure.cpp">
+      <Filter>InGameBrowser\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\sources\WinSharedLocalToastNotifications.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{c23f7007-4cdf-4f7a-8c78-ba79da4105c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformBaseInterface">
+      <UniqueIdentifier>{6048ec04-a99d-4079-92e3-16497ffcf93f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PushNotifications">
+      <UniqueIdentifier>{a61d03a0-637d-4776-bf96-33b84689fbe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SecureStorage">
+      <UniqueIdentifier>{93a14d10-d6fd-45ab-a902-c28efb46ca19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinCryptography">
+      <UniqueIdentifier>{5aed375a-a860-4dc5-b501-8ea240d8fc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameBrowser">
+      <UniqueIdentifier>{36e532f4-f5e8-449d-a36e-116fdf3ce77f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameBrowser\src">
+      <UniqueIdentifier>{6f045632-2f0b-4966-9a5c-5410cea24390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameBrowser\src\win8.1">
+      <UniqueIdentifier>{030b8333-6f0a-4d48-851a-001268505f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameBrowser\src\common">
+      <UniqueIdentifier>{fdb6484a-7114-42bd-b6d0-63e41b0d133b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameBrowser\Resources">
+      <UniqueIdentifier>{437d8516-bfcc-4ab9-ab97-0745264452ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{9da6d521-52a1-4cbf-ab1e-07964b6765cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_back.png">
+      <Filter>InGameBrowser\Resources</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_background.png">
+      <Filter>InGameBrowser\Resources</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_cancel.png">
+      <Filter>InGameBrowser\Resources</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_forward.png">
+      <Filter>InGameBrowser\Resources</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_refresh.png">
+      <Filter>InGameBrowser\Resources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

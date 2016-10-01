@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_back.png" />
+    <Image Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_background.png" />
+    <Image Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_cancel.png" />
+    <Image Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_forward.png" />
+    <Image Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\res\igb_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\common\InitStructure.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\win8.1\InGameBrowser.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\Platform\DeviceInfo.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\Platform\FileSystem.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\Platform\GeoLocator.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationImplementation.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\FileStorage.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultEntry.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManager.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\SecureStorageWrapper.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\GamePad.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedConnectivity.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedControllers.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedHacking.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedIdentifiers.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedLiveTiles.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedLocalToastNotifications.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedPushNotifications.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedScreenUtils.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedSensors.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedStorage.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedSystemInfo.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedUtils.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\sources\WinSharedWeb.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\Utils\Encryptor.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Shared\Utils\ZOrdering.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Windows\Sources\AntiHack.cpp" />
+    <ClCompile Include="..\..\src\WindowsCorePackage.Windows\WinCryptography.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\PlatformBaseInterface\PlatformBase.h" />
+    <ClInclude Include="..\..\include\Platform\DeviceInfo.h" />
+    <ClInclude Include="..\..\include\Platform\FileSystem.h" />
+    <ClInclude Include="..\..\include\Platform\GeoLocator.h" />
+    <ClInclude Include="..\..\include\Platform\Platform.h" />
+    <ClInclude Include="..\..\include\Windows_lib_version.h" />
+    <ClInclude Include="..\..\include\WinShared.h" />
+    <ClInclude Include="..\..\include\WinSharedManaged.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\common\InitStructure.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\InGameBrowser\src\win8.1\InGameBrowser.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\pch.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationData.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\PushNotifications\PushNotificationImplementation.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\FileStorage.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\ISingleton.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultEntry.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManager.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\PasswordVaultManagerConfig.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\SecureStorageManager\SecureStorageWrapper.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\targetver.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\Utils\Encryptor.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Shared\Utils\ZOrdering.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Windows\Include\AntiHack.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Windows\Include\FileAgents.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Windows\Include\GamePad.h" />
+    <ClInclude Include="..\..\src\WindowsCorePackage.Windows\WinCryptography.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{d1de0860-b7d4-4079-bf57-b77e09744f98}</ProjectGuid>
+    <Keyword>DynamicLibrary</Keyword>
+    <ProjectName>WindowsCorePackage.Windows10</ProjectName>
+    <RootNamespace>WindowsCorePackage</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Props\common_w10.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Props\common_w10.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Props\common_w10.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Props\common_w10.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Props\common_w10.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Props\common_w10.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(Projectdir)../../src\WindowsCorePackage.Windows;$(Projectdir)../../src/WindowsCorePackage.Shared/;$(Projectdir)../../include;$(Projectdir)../../src\WindowsCorePackage.Shared\sources;$(Projectdir)../../src\WindowsCorePackage.Windows\Include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <WindowsMetadataFile>$(OutDir)WCPToolkit.winmd</WindowsMetadataFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(Projectdir)../../src\WindowsCorePackage.Windows;$(Projectdir)../../src/WindowsCorePackage.Shared/;$(Projectdir)../../include;$(Projectdir)../../src\WindowsCorePackage.Shared\sources;$(Projectdir)../../src\WindowsCorePackage.Windows\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <WindowsMetadataFile>$(OutDir)WCPToolkit.winmd</WindowsMetadataFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(Projectdir)../../src\WindowsCorePackage.Windows;$(Projectdir)../../src/WindowsCorePackage.Shared/;$(Projectdir)../../include;$(Projectdir)../../src\WindowsCorePackage.Shared\sources;$(Projectdir)../../src\WindowsCorePackage.Windows\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <WindowsMetadataFile>$(OutDir)WCPToolkit.winmd</WindowsMetadataFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(Projectdir)../../src\WindowsCorePackage.Windows;$(Projectdir)../../src/WindowsCorePackage.Shared/;$(Projectdir)../../include;$(Projectdir)../../src\WindowsCorePackage.Shared\sources;$(Projectdir)../../src\WindowsCorePackage.Windows\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <WindowsMetadataFile>$(OutDir)WCPToolkit.winmd</WindowsMetadataFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(Projectdir)../../src\WindowsCorePackage.Windows;$(Projectdir)../../src/WindowsCorePackage.Shared/;$(Projectdir)../../include;$(Projectdir)../../src\WindowsCorePackage.Shared\sources;$(Projectdir)../../src\WindowsCorePackage.Windows\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <ImportLibrary>$(ProjectDir)\LibsWindows8\$(TargetName).lib</ImportLibrary>
+      <WindowsMetadataFile>$(OutDir)WCPToolkit.winmd</WindowsMetadataFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(Projectdir)../../src\WindowsCorePackage.Windows;$(Projectdir)../../src/WindowsCorePackage.Shared/;$(Projectdir)../../include;$(Projectdir)../../src\WindowsCorePackage.Shared\sources;$(Projectdir)../../src\WindowsCorePackage.Windows\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <ImportLibrary>$(ProjectDir)\LibsWindows8\$(TargetName).lib</ImportLibrary>
+      <WindowsMetadataFile>$(OutDir)WCPToolkit.winmd</WindowsMetadataFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>5fb6deef-7491-410c-8b4c-b67fe92359db</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>67b2204a-eeae-40da-812d-43cb7e44e35a</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>2c118e9a-e1cb-41ef-859e-539ae7703fe4</UniqueIdentifier>
+    </Filter>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MainGame1.Windows_TemporaryKey.pfx" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\winrt_8.1-specific\angle\prebuilt\win32\libEGL.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\winrt_8.1-specific\angle\prebuilt\win32\libGLESv2.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\winrt_8.1-specific\OggDecoder\prebuilt\win32\libogg.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\winrt_8.1-specific\OggDecoder\prebuilt\win32\libvorbis.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\winrt_8.1-specific\OggDecoder\prebuilt\win32\libvorbisfile.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\websockets\prebuilt\winrt_8.1\win32\libwebsockets.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\sqlite3\libraries\winrt_8.1\win32\sqlite3.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\curl\prebuilt\winrt_8.1\win32\libcurl.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\curl\prebuilt\winrt_8.1\win32\libeay32.dll" />
+    <None Include="..\..\..\..\..\cocos2d-x-lib\external\curl\prebuilt\winrt_8.1\win32\ssleay32.dll" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+<GAME>
+	<BoostItem>
+		<Item id="0" name="Item_Hint_Add">
+			<displayName 	value="Add Hint"/>	
+			<cost_item 		value="35" />
+			<number_add 	value="5" />
+			<dec 			value=""/>
+		</Item>
+		<Item id="1" name="Item_Time_Add">
+			<displayName 	value="Add Time" />	
+			<cost_item 		value="30" />
+			<number_add 	value="4" />
+			<dec 			value=""/>
+		</Item>
+		<Item id="2" name="Item_Freeze_Add">
+			<displayName 	value="Add Freeze" />	
+			<cost_item 		value="15" />
+			<number_add 	value="3" />
+			<dec 			value=""/>
+		</Item>
+	</BoostItem>
+	<IAPItem>
+		<Item id="0" name="10_hints_pack">
+			<key 			value="hints_10_pack"/>
+			<displayName 	value="10 hints" />	
+			<value 			value="10"/> 
+			<type			value="0"/> <!-- 0 is consumable , 1 is durable -->
+			<cost			value="0.99$"/>
+		</Item>
+		<Item id="1" name="40_hints_pack">
+			<key 			value="hints_40_pack"/>
+			<displayName 	value="40 hints" />	
+			<value 			value="40"/> 
+			<type			value="0"/>
+			<cost			value="1.99$"/>
+		</Item>
+		<Item id="2" name="120_hints_pack">
+            <key 			value="hints_120_pack"/>
+			<displayName 	value="120 hints" />	
+			<value 			value="120"/> 
+			<type			value="0"/>
+			<cost			value="3.99$"/>
+		</Item>
+		<Item id="3" name="remove_ads_pack">
+			<key 			value="ads_remove_pack"/> 	
+			<displayName 	value="Remove ads" />	
+			<value 			value="remove ads /n from your game"/> 
+			<type			value="1"/>
+			<cost			value="0.99$"/>
+		</Item>
+	</IAPItem>
+</GAME>

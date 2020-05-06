@@ -3,7 +3,7 @@
 
 #include "ObjectBGEntity.h"
 
-#include "../../../../LIB/RKUtils/Code/RKThread_Code/RKThread.h"
+#include "RKThread_Code/RKThread.h"
 
 #if USE_DYNAMIC_BG
 

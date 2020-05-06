@@ -4,23 +4,14 @@
     <Filter Include="Background">
       <UniqueIdentifier>{ec40f8e9-6ea3-433b-8aba-fc8a4d02227d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="BoostMgr">
-      <UniqueIdentifier>{e8b85f5a-f004-4451-9617-a170f0f62ed9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="FXFlatform">
       <UniqueIdentifier>{704332a7-2c57-4094-bad9-5707030639dc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="IAP">
-      <UniqueIdentifier>{cb8a8359-c468-44af-acd8-6b09739b923f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Social">
       <UniqueIdentifier>{f3dc5fe9-2efc-4ffd-b986-878d8f8712a5}</UniqueIdentifier>
     </Filter>
     <Filter Include="UI">
       <UniqueIdentifier>{412fef7e-fa90-4a34-b0f1-2cbb889a7c42}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="UI\Entity">
-      <UniqueIdentifier>{5aa38d9d-2dd0-42fb-8ad8-cbefd67668d6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Social\Downloader">
       <UniqueIdentifier>{6fd49fcd-eda8-46fa-96db-e5c1fab159b3}</UniqueIdentifier>
@@ -32,7 +23,13 @@
       <UniqueIdentifier>{86594c68-053f-4680-b882-981c5e7a0dd9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Scene3D">
-      <UniqueIdentifier>{1d8b0d68-0529-413f-9b3b-33544ea6f6e3}</UniqueIdentifier>
+      <UniqueIdentifier>{e9cac1ef-933c-4868-81e2-20372fce32c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IAP">
+      <UniqueIdentifier>{f15cfb2a-69eb-45ac-b18d-f0754b208383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BoostMgr">
+      <UniqueIdentifier>{a1b8030a-1f62-4db1-812f-5d37fd31cfa2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -42,29 +39,8 @@
     <ClInclude Include="..\..\Code\Background\ObjectBGEntity.h">
       <Filter>Background</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\BoostMgr\BoostManager.h">
-      <Filter>BoostMgr</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Code\FXFlatform\XFlatform.h">
       <Filter>FXFlatform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\IAP\IAPManager.h">
-      <Filter>IAP</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\UI\Entity\ButtonEntity.h">
-      <Filter>UI\Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\UI\Entity\MenuEntity.h">
-      <Filter>UI\Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\UI\Entity\MenuResource.h">
-      <Filter>UI\Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\UI\Entity\PanelEntity.h">
-      <Filter>UI\Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\UI\Entity\TextEntity.h">
-      <Filter>UI\Entity</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\Social\SocialManager.h">
       <Filter>Social</Filter>
@@ -73,13 +49,11 @@
       <Filter>Social\Downloader</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\DisplayView.h" />
-    <ClInclude Include="..\..\Code\Effect.h" />
     <ClInclude Include="..\..\Code\Factory.h" />
     <ClInclude Include="..\..\Code\FileManager.h" />
     <ClInclude Include="..\..\Code\InputManager.h" />
     <ClInclude Include="..\..\Code\LoadDataXML.h" />
     <ClInclude Include="..\..\Code\ObjectTexture.h" />
-    <ClInclude Include="..\..\Code\ParicleManager.h" />
     <ClInclude Include="..\..\Code\SoundManager.h" />
     <ClInclude Include="..\..\Code\UI\AdvanceUI\WidgetEntity.h">
       <Filter>UI\AdvanceUI</Filter>
@@ -88,9 +62,6 @@
       <Filter>UI\AdvanceUI</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\UI\AdvanceUI\LayerEntity.h">
-      <Filter>UI\AdvanceUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\UI\AdvanceUI\MenuWidget.h">
       <Filter>UI\AdvanceUI</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\UI\AdvanceUI\ActionProcess.h">
@@ -123,14 +94,31 @@
     <ClInclude Include="..\..\Code\UI\AdvanceUI\wRadioBtn.h">
       <Filter>UI\AdvanceUI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Object\BasicObject.h">
-      <Filter>Object</Filter>
+    <ClInclude Include="..\..\Code\UI\AdvanceUI\wTextField.h">
+      <Filter>UI\AdvanceUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\wTool.h" />
+    <ClInclude Include="..\..\Code\UI\AdvanceUI\MenuWidget.h">
+      <Filter>UI\AdvanceUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Scene3D\SceneManager.h">
+      <Filter>Scene3D</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\Scene3D\Scene3D.h">
       <Filter>Scene3D</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Scene3D\SceneManager.h">
-      <Filter>Scene3D</Filter>
+    <ClInclude Include="..\..\Code\IAP\IAPManager.h">
+      <Filter>IAP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Object\BasicObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\BoostMgr\BoostManager.h">
+      <Filter>BoostMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\ParicleManager.h" />
+    <ClInclude Include="..\..\Code\UI\AdvanceUI\wCheckBox.h">
+      <Filter>UI\AdvanceUI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -140,29 +128,8 @@
     <ClCompile Include="..\..\Code\Background\BGObject.cpp">
       <Filter>Background</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\BoostMgr\BoostManager.cpp">
-      <Filter>BoostMgr</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Code\FXFlatform\XFlatform.cpp">
       <Filter>FXFlatform</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\IAP\IAPManager.cpp">
-      <Filter>IAP</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\UI\Entity\ButtonEntity.cpp">
-      <Filter>UI\Entity</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\UI\Entity\MenuEntity.cpp">
-      <Filter>UI\Entity</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\UI\Entity\MenuResource.cpp">
-      <Filter>UI\Entity</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\UI\Entity\PanelEntity.cpp">
-      <Filter>UI\Entity</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\UI\Entity\TextEntity.cpp">
-      <Filter>UI\Entity</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Code\Social\SocialManager.cpp">
       <Filter>Social</Filter>
@@ -171,12 +138,10 @@
       <Filter>Social\Downloader</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Code\DisplayView.cpp" />
-    <ClCompile Include="..\..\Code\Effect.cpp" />
     <ClCompile Include="..\..\Code\FileManager.cpp" />
     <ClCompile Include="..\..\Code\InputManager.cpp" />
     <ClCompile Include="..\..\Code\LoadDataXML.cpp" />
     <ClCompile Include="..\..\Code\ObjectTexture.cpp" />
-    <ClCompile Include="..\..\Code\ParticleManager.cpp" />
     <ClCompile Include="..\..\Code\SoundManager.cpp" />
     <ClCompile Include="..\..\Code\UI\AdvanceUI\WidgetEntity.cpp">
       <Filter>UI\AdvanceUI</Filter>
@@ -185,9 +150,6 @@
       <Filter>UI\AdvanceUI</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Code\UI\AdvanceUI\LayerEntity.cpp">
-      <Filter>UI\AdvanceUI</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\UI\AdvanceUI\MenuWidget.cpp">
       <Filter>UI\AdvanceUI</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Code\UI\AdvanceUI\ActionProcess.cpp">
@@ -220,14 +182,31 @@
     <ClCompile Include="..\..\Code\UI\AdvanceUI\wRadioBtn.cpp">
       <Filter>UI\AdvanceUI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\Object\BasicObject.cpp">
-      <Filter>Object</Filter>
+    <ClCompile Include="..\..\Code\UI\AdvanceUI\wTextField.cpp">
+      <Filter>UI\AdvanceUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\wTool.cpp" />
+    <ClCompile Include="..\..\Code\UI\AdvanceUI\MenuWidget.cpp">
+      <Filter>UI\AdvanceUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Scene3D\SceneManager.cpp">
+      <Filter>Scene3D</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Code\Scene3D\Scene3D.cpp">
       <Filter>Scene3D</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\Scene3D\SceneManager.cpp">
-      <Filter>Scene3D</Filter>
+    <ClCompile Include="..\..\Code\IAP\IAPManager.cpp">
+      <Filter>IAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Object\BasicObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\BoostMgr\BoostManager.cpp">
+      <Filter>BoostMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\ParticleManager.cpp" />
+    <ClCompile Include="..\..\Code\UI\AdvanceUI\wCheckBox.cpp">
+      <Filter>UI\AdvanceUI</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

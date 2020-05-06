@@ -4,8 +4,8 @@
 #include "../LoadDataXML.h"
 #include "../DisplayView.h"
 #if USE_IAP
-#include "../../../../LIB/RKUtils/Code/RKThread_Code/RKThread.h"
-#include "../../../../LIB/RKUtils/Code/RKThread_Code/RKInterlock.h"
+#include "RKThread_Code/RKThread.h"
+#include "RKThread_Code/RKInterlock.h"
 using namespace RKUtils;
 namespace Utility
 {

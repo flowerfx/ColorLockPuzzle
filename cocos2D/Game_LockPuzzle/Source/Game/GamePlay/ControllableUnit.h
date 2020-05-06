@@ -1,7 +1,6 @@
 #ifndef __CONTROLLABLE_UNIT_H__
 #define __CONTROLLABLE_UNIT_H__
 
-#include "UI/Entity/TextEntity.h"
 #include "BasicUnit.h"
 #include "cocos2d.h"
 

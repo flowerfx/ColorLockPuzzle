@@ -12,15 +12,15 @@
 #include "RKMacros.h"
 #include <stdlib.h>
 #if defined OS_W8
-#include "../../../../../cocos2d-x-lib/external/winrt_8.1-specific/zlib/include/zlib.h"
+#include "../../../../../cocos2dx-lib/external/winrt_8.1-specific/zlib/include/zlib.h"
 #elif defined OS_WP8
-#include "../../../../../cocos2d-x-lib/external/wp_8.1-specific/zlib/include/zlib.h"
+#include "../../../../../cocos2dx-lib/external/wp_8.1-specific/zlib/include/zlib.h"
 #elif defined OS_W10
-#include "../../../../../cocos2d-x-lib/external/win10-specific/zlib/include/zlib.h"
+#include "../../../../../cocos2dx-lib/external/win10-specific/zlib/include/zlib.h"
 #elif defined WIN32
-#include "../../../../cocos2d-x-lib/external/win32-specific/zlib/include/zlib.h"
+#include "../../../../cocos2dx-lib/external/win32-specific/zlib/include/zlib.h"
 #else
-#include "../../../../cocos2d-x-lib/external/zlib/include/zlib.h"
+#include "../../../../cocos2dx-lib/external/zlib/include/zlib.h"
 #endif
 namespace RKUtils
 {

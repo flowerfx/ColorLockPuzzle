@@ -82,6 +82,15 @@ namespace RKUtils
 
 	}
 
+	size_t ThreadWrapper::GetCurrentID()
+	{
+		if (m_Thread != NULL)
+		{
+			return (size_t)RKThread_GetID(m_Thread);
+		}
+		return 0;
+	}
+
 	void ThreadWrapper::ReleaseThreadWrapper()
 	{
 		if (this)

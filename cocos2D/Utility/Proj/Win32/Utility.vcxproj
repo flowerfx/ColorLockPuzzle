@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -15,7 +15,6 @@
     <ClInclude Include="..\..\Code\Background\ObjectBGEntity.h" />
     <ClInclude Include="..\..\Code\BoostMgr\BoostManager.h" />
     <ClInclude Include="..\..\Code\DisplayView.h" />
-    <ClInclude Include="..\..\Code\Effect.h" />
     <ClInclude Include="..\..\Code\Factory.h" />
     <ClInclude Include="..\..\Code\FileManager.h" />
     <ClInclude Include="..\..\Code\FXFlatform\XFlatform.h" />
@@ -36,6 +35,7 @@
     <ClInclude Include="..\..\Code\UI\AdvanceUI\LayerEntity.h" />
     <ClInclude Include="..\..\Code\UI\AdvanceUI\MenuWidget.h" />
     <ClInclude Include="..\..\Code\UI\AdvanceUI\wButton.h" />
+    <ClInclude Include="..\..\Code\UI\AdvanceUI\wCheckBox.h" />
     <ClInclude Include="..\..\Code\UI\AdvanceUI\WidgetEntity.h" />
     <ClInclude Include="..\..\Code\UI\AdvanceUI\wLayout.h" />
     <ClInclude Include="..\..\Code\UI\AdvanceUI\wListView.h" />
@@ -44,18 +44,14 @@
     <ClInclude Include="..\..\Code\UI\AdvanceUI\wRadioBtn.h" />
     <ClInclude Include="..\..\Code\UI\AdvanceUI\wScrollView.h" />
     <ClInclude Include="..\..\Code\UI\AdvanceUI\wText.h" />
-    <ClInclude Include="..\..\Code\UI\Entity\ButtonEntity.h" />
-    <ClInclude Include="..\..\Code\UI\Entity\MenuEntity.h" />
-    <ClInclude Include="..\..\Code\UI\Entity\MenuResource.h" />
-    <ClInclude Include="..\..\Code\UI\Entity\PanelEntity.h" />
-    <ClInclude Include="..\..\Code\UI\Entity\TextEntity.h" />
+    <ClInclude Include="..\..\Code\UI\AdvanceUI\wTextField.h" />
+    <ClInclude Include="..\..\Code\wTool.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Code\Background\BGObject.cpp" />
     <ClCompile Include="..\..\Code\Background\ObjectBGEntity.cpp" />
     <ClCompile Include="..\..\Code\BoostMgr\BoostManager.cpp" />
     <ClCompile Include="..\..\Code\DisplayView.cpp" />
-    <ClCompile Include="..\..\Code\Effect.cpp" />
     <ClCompile Include="..\..\Code\FileManager.cpp" />
     <ClCompile Include="..\..\Code\FXFlatform\XFlatform.cpp" />
     <ClCompile Include="..\..\Code\IAP\IAPManager.cpp" />
@@ -75,6 +71,7 @@
     <ClCompile Include="..\..\Code\UI\AdvanceUI\LayerEntity.cpp" />
     <ClCompile Include="..\..\Code\UI\AdvanceUI\MenuWidget.cpp" />
     <ClCompile Include="..\..\Code\UI\AdvanceUI\wButton.cpp" />
+    <ClCompile Include="..\..\Code\UI\AdvanceUI\wCheckBox.cpp" />
     <ClCompile Include="..\..\Code\UI\AdvanceUI\WidgetEntity.cpp" />
     <ClCompile Include="..\..\Code\UI\AdvanceUI\wLayout.cpp" />
     <ClCompile Include="..\..\Code\UI\AdvanceUI\wListView.cpp" />
@@ -83,28 +80,34 @@
     <ClCompile Include="..\..\Code\UI\AdvanceUI\wRadioBtn.cpp" />
     <ClCompile Include="..\..\Code\UI\AdvanceUI\wScrollView.cpp" />
     <ClCompile Include="..\..\Code\UI\AdvanceUI\wText.cpp" />
-    <ClCompile Include="..\..\Code\UI\Entity\ButtonEntity.cpp" />
-    <ClCompile Include="..\..\Code\UI\Entity\MenuEntity.cpp" />
-    <ClCompile Include="..\..\Code\UI\Entity\MenuResource.cpp" />
-    <ClCompile Include="..\..\Code\UI\Entity\PanelEntity.cpp" />
-    <ClCompile Include="..\..\Code\UI\Entity\TextEntity.cpp" />
+    <ClCompile Include="..\..\Code\UI\AdvanceUI\wTextField.cpp" />
+    <ClCompile Include="..\..\Code\wTool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\proj.win32\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\json\project\vs2013\jsoncpp.vcxproj">
+      <Project>{42abb4f7-ae8a-3393-b7a2-be6923019af4}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{59E9B6DA-10CD-4C4A-8139-CBB815E4C5D1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Utility</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -113,13 +116,13 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\cocos2d-x-lib\cocos\2d\cocos2dx.props" />
-    <Import Project="..\..\..\cocos2d-x-lib\cocos\2d\cocos2d_headers.props" />
+    <Import Project="..\..\..\cocos2dx-lib\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\..\cocos2dx-lib\cocos\2d\cocos2d_headers.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\cocos2d-x-lib\cocos\2d\cocos2dx.props" />
-    <Import Project="..\..\..\cocos2d-x-lib\cocos\2d\cocos2d_headers.props" />
+    <Import Project="..\..\..\cocos2dx-lib\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\..\cocos2dx-lib\cocos\2d\cocos2d_headers.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -131,9 +134,11 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>GAME_WIN32;WIN32;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\..\Lib\RKUtils\Code;..\..\..\cocos2d-x-lib\cocos;..\..\..\cocos2d-x-lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\lib\RKUtils\Code;..\..\..\cocos2dx-lib\cocos;..\..\..\cocos2dx-lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4244;4018</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -142,7 +147,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level1</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
@@ -150,10 +155,11 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>GAME_WIN32;WIN32;_WINDOWS;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\..\Lib\RKUtils\Code;..\..\..\cocos2d-x-lib\cocos;..\..\..\cocos2d-x-lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\RKUtils\Code;..\..\..\..\cocos2dx-lib\cocos;..\..\..\..\cocos2dx-lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4244;4018</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

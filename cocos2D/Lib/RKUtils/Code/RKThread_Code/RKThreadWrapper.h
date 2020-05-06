@@ -41,6 +41,8 @@ namespace RKUtils
 		void OnWakeUpAndRunThread();
 
 		bool IsThreadRunning() { return m_IsThreadOnRunning; }
+
+		size_t GetCurrentID();
 	};
 }
 ///----------------------------------------------------------------------

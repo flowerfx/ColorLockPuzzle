@@ -13,6 +13,11 @@
 #include "FileManager.h"
 
 #include "Social/SocialManager.h"
+
+namespace RKUtils {
+	void RKFile_InitModule();
+}
+
 MainGame * MainGame::p_Instance = NULL;
 MainGame::MainGame()
 {
@@ -94,7 +99,7 @@ bool MainGame::InitTheGame(float dt)
 {
 	if (p_loadingStep == 0)
 	{
-        Director::getInstance()->InitModuleRKFile();
+		RKUtils::RKFile_InitModule();
 		p_loadingStep++;
 		return false;
 	}

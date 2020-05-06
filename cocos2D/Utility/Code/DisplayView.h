@@ -124,5 +124,5 @@ namespace Utility
 #define	UI_WIDGET_XML		"MenuUIWidget.xml"
 #define	W_OBJECT_DEC_XML	"GamePlayObject_widget.xml"
 #define SCENE_3D_DEC_XML	"Scene3DDec.xml"
-
+#define TEXTURE_PACKER_XML	"texturePacker.xml"
 #endif //_DISPLAY_VIEW_H_
